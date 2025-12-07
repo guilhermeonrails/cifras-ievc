@@ -407,6 +407,7 @@ E enche o meu coração do amor que faz
  [F#m]
 Mudar o mundo
 `
+
     }
 ];
 
@@ -498,20 +499,19 @@ function toggleColumns() {
     const display = document.getElementById('cifra-display');
     const button = document.getElementById('columns-toggle');
 
-    isTwoColumns = !isTwoColumns;
-
-    if (isTwoColumns) {
+    // Define o estado atual com base nas classes aplicadas
+    if (display.classList.contains('columns-1')) {
         display.classList.remove('columns-1');
         display.classList.add('columns-2');
         button.textContent = '2 Colunas';
-        button.classList.add('bg-green-600');
-        button.classList.remove('bg-blue-600');
-    } else {
+    } else if (display.classList.contains('columns-2')) {
         display.classList.remove('columns-2');
+        display.classList.add('columns-3');
+        button.textContent = '3 Colunas';
+    } else {
+        display.classList.remove('columns-3');
         display.classList.add('columns-1');
         button.textContent = '1 Coluna';
-        button.classList.remove('bg-green-600');
-        button.classList.add('bg-blue-600');
     }
 }
 
