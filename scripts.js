@@ -590,6 +590,27 @@ function toggleMenu() {
     }
 }
 
+// Função para ativar/desativar a rolagem automática
+let autoScrollInterval = null;
+function toggleAutoScroll() {
+    const button = document.getElementById('auto-scroll-button');
+
+    if (autoScrollInterval) {
+        clearInterval(autoScrollInterval);
+        autoScrollInterval = null;
+        button.textContent = 'Ativar Rolagem';
+        button.classList.remove('bg-red-600');
+        button.classList.add('bg-green-600');
+    } else {
+        autoScrollInterval = setInterval(() => {
+            window.scrollBy({ top: 1, behavior: 'smooth' });
+        }, 50); // Ajuste a velocidade da rolagem alterando o intervalo
+        button.textContent = 'Parar Rolagem';
+        button.classList.remove('bg-green-600');
+        button.classList.add('bg-red-600');
+    }
+}
+
 window.onload = () => {
     const hamburgerButton = document.getElementById('hamburger-button');
     if (hamburgerButton) {
@@ -608,3 +629,4 @@ window.onload = () => {
 window.transpose = transpose;
 window.toggleColumns = toggleColumns;
 window.changeFontSize = changeFontSize;
+window.toggleAutoScroll = toggleAutoScroll;
