@@ -576,7 +576,27 @@ function initializeSongList() {
     });
 }
 
+// Adiciona a lógica para o menu hamburger e responsividade
+function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const cifraViewer = document.getElementById('cifra-viewer');
+
+    if (sidebar.classList.contains('hidden')) {
+        sidebar.classList.remove('hidden');
+        cifraViewer.classList.add('hidden');
+    } else {
+        sidebar.classList.add('hidden');
+        cifraViewer.classList.remove('hidden');
+    }
+}
+
 window.onload = () => {
+    const hamburgerButton = document.getElementById('hamburger-button');
+    if (hamburgerButton) {
+        hamburgerButton.addEventListener('click', toggleMenu);
+    }
+
+    // Inicializa a lista de músicas e carrega a primeira música
     initializeSongList();
     if (SONGS.length > 0) {
         loadSong(SONGS[0].id);
