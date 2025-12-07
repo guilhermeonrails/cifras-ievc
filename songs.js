@@ -782,4 +782,85 @@ TUA ALEGRIA É MINHA VIDA
 RECEBO DELA HOJE, AGORA
 `
     },
+
+    { 
+        id: 14, 
+        title: "Aleluia ao Rei", 
+        chord_text: `
+Verso e Refrão
+[D] | [Am] | [G] | [D] |
+
+Instrumental
+[Em] | [G] | [Bm] | [A] |
+[Em] | [G] | [A]     | [G] |
+`
+    },
+    { 
+        id: 15, 
+        title: "Alegria - Valadão", 
+        chord_text: `
+[C]     [Am]        [Em] 
+TU ME AMAS COMO SOU 
+            [G]          [C] 
+MAS NÁO ME DEIXAS COMO ESTOU 
+            [Am]            [Em] 
+SEGUIR TEUS PASSOS SEMPRE VOU  
+          [G]             [C] 
+RUMO AO ENCONTRO DO TEU AMOR 
+      [Am]                 [Em] 
+O TEU AMOR É MAIOR QUE A VIDA 
+         [G]        [C] 
+ME TRAZ PAZ E ALEGRIA 
+          [F]           [G]    [Am] 
+COM TEU PERFUME QUERO ME ENCHER 
+             [G]               [C] 
+E A CADA INSTANTE MAIS TE CONHECER 
+
+       [Dm]             [C/E]            [F]     [G] 
+TUA VERDADE É A LUZ QUE ME CONDUZ PARA O CÉU 
+       [Dm]                 [C/E]         [F]    [G] 
+TUA PALAVRA É O REMÉDIO QUE CURA TODO MEU SER 
+
+
+       [F]             [C/E] 
+TUA ALEGRIA EM MINHA VIDA 
+[Dm]                       [Gsus]  [G] 
+ME FORTALECE A CADA NOVO DIA 
+       [F]            [C/E] 
+TUA ALEGRIA É MINHA VIDA 
+            [Dm]      [G] 
+RECEBO DELA HOJE, AGORA
+`
+    },
+
+    { 
+        id: 16, 
+        title: "Alfa e Ômega", 
+        chord_text: `
+[A]          [E]   
+Não há outro como Tu
+    [A]        [E]   
+Soberano e Fiel
+       [A]          [C#m]
+Não há outro como Tu
+       [A]               [B]
+Reinas sobre a Terra e céus
+[Refrão]
+
+     [E]
+És o Alfa e Ômega, Início e Fim
+     [B]
+És o ar que eu respiro, tudo pra mim
+   [A]             [F#m]  [B]
+Tu és Jesus,  tu és Jesus
+
+[Final]
+     [C#m]
+És o Alfa e Ômega, Início e Fim
+     [B]                  [E]
+És o ar que eu respiro, tudo pra mim, [E]
+   [A]          [F#m]   [B]
+Tu és Jesus, tu és Jesus
+`
+    },
 ].sort((a, b) => a.title.localeCompare(b.title));
