@@ -832,7 +832,6 @@ TUA ALEGRIA É MINHA VIDA
 RECEBO DELA HOJE, AGORA
 `
     },
-
     { 
         id: 16, 
         title: "Alfa e Ômega", 
@@ -861,6 +860,44 @@ Tu és Jesus,  tu és Jesus
 És o ar que eu respiro, tudo pra mim, [E]
    [A]          [F#m]   [B]
 Tu és Jesus, tu és Jesus
+`
+    },
+    { 
+        id: 17, 
+        title: "Ao cheiro das águas", 
+        chord_text: `
+[C]            [G#º]
+Há esperança para o ferido
+     [Am]                 [F]         [F]
+Como árvore cortado, marcado pela dor 
+[Dm]                    [Em]
+Ainda que na terra envelheça a raiz
+      [F]
+E no chão, abandonado
+       [G]        [G]      ( [F]    [Fm]    )
+O seu tronco morrer
+[C]            [G#º]
+Há esperança para o ferido
+     [Am]                 [F]         [F]
+Como árvore cortado, marcado pela dor 
+[Dm]                    [Em]
+Ainda que na terra envelheça a raiz
+      [F]
+E no chão, abandonado
+       [G]        [G]
+O seu tronco morrer
+[Fm]                 [C]
+Há esperança pra você
+[Refrão]
+    [C]         [F]      [G]   [Am]
+Ao cheiro das águas brotará
+[C]           [F]    [G]       [Em] 
+Como planta nova florescerá
+     [Am]       [G]     [F] 
+Seus ramos se renovarão
+[C]                    [Fm]       [G#º]
+Não cessarão os seus frutos e viverá
+( [Am]   [Em]   [Am]   [Em]   [F]   [Fm]     )
 `
     },
 ].sort((a, b) => a.title.localeCompare(b.title));
