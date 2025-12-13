@@ -262,19 +262,19 @@ As circunstâncias
         chord_text: `
 [A]                 [D]
    Digno desta canção só Tu és Senhor
-[A/C#]                  [D]
+[A]                  [D]
       Digno do meu louvor só Tu és Senhor
 [A]                 [D]
    Digno da minha vida Tu és Senhor
-           [A/C#]  [D]
+           [A]  [D]
 Oh eu sou Teu
 [A]                   [D]
    Nome que é sobre todos é o Teu Jesus
-[A/C#]                [D]
+[A]                [D]
       Fonte da salvação só Tu és Jesus
 [A]                 [D]
    Digno da minha vida Tu és Jesus
-           [A/C#]           [D]
+           [A]           [D]
 Oh eu sou Teu   oh eu sou Teu
 
 [Refrão]
@@ -301,19 +301,19 @@ Mudar o mundo
 [Primeira Parte]
 [A]                 [D]
    Digno desta canção só Tu és Senhor
-[A/C#]                  [D]
+[A]                  [D]
       Digno do meu louvor só Tu és Senhor
 [A]                 [D]
    Digno da minha vida Tu és Senhor
-           [A/C#]  [D]
+           [A]  [D]
 Oh eu sou Teu
 [A]                   [D]
    Nome que é sobre todos é o Teu Jesus
-[A/C#]                [D]
+[A]                [D]
       Fonte da salvação só Tu és Jesus
 [A]                 [D]
    Digno da minha vida Tu és Jesus
-           [A/C#]           [D]
+           [A]           [D]
 Oh eu sou Teu   oh eu sou Teu
 
 [Refrão]
@@ -352,32 +352,32 @@ Mudar o mundo
 
 [Ponte]
 
-( [D]  [E]  [F#m]  [A/C#] )
-( [D]  [E]  [F#m]  [A/C#] )
+( [D]  [E]  [F#m]  [A] )
+( [D]  [E]  [F#m]  [A] )
  
 [D]            [E]                 [F#m]
 Eu vou construir minha vida em Ti
-           [A/C#]
+           [A]
 Tu és meu fundamento
 [D]          [E]              [F#m]
 Eu vou confiar somente em Ti
-            [A/C#]
+            [A]
 Não vou ser abalado
 [D]            [E]                 [F#m]
 Eu vou construir minha vida em Ti
-           [A/C#]
+           [A]
 Tu és meu fundamento
 [D]          [E]              [F#m]
 Eu vou confiar somente em Ti
-            [A/C#]
+            [A]
 Não vou ser abalado
 [D]            [E]                 [F#m]
 Eu vou construir minha vida em Ti
-           [A/C#]
+           [A]
 Tu és meu fundamento
 [D]          [E]              [F#m]
 Eu vou confiar somente em Ti
-            [A/C#]
+            [A]
 Não vou ser abalado
 
 [Refrão]
@@ -900,4 +900,18 @@ Não cessarão os seus frutos e viverá
 ( [Am]   [Em]   [Am]   [Em]   [F]   [Fm]     )
 `
     },
+    { 
+        id: 18, 
+        title: "Oceanos", 
+        chord_text: `
+[Bm] | [D] | [A] | [G] |
+
+
+[Refrão]
+| [G]   [D] | [A]       | [G] |
+   / /  / /   / /  / / 
+
+[Guia-me]
+| [Bm] | [G] | [D] | [F#m]  ||
+    `},
 ].sort((a, b) => a.title.localeCompare(b.title));

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
     <!-- 1. Menu de Controle Superior -->
-    <header class="sticky top-0 z-10 bg-white shadow-lg p-3 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 border-b border-teal-500">
+    <header
+        class="sticky top-0 z-10 bg-white shadow-lg p-3 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 border-b border-teal-500">
         <div class="flex justify-between w-full md:w-auto">
             <h1 class="text-2xl font-bold text-teal-600 hidden sm:block">Cifras IEVC</h1>
             <!-- Botão Hamburger para dispositivos móveis -->
-            <button id="hamburger-button" class="md:hidden p-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-150">
+            <button id="hamburger-button"
+                class="md:hidden p-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-150">
                 ☰
             </button>
         </div>
-        <div class="flex flex-wrap justify-center md:justify-end items-center space-x-2 md:space-x-4 text-sm md:text-base">
-            
+        <div
+            class="flex flex-wrap justify-center md:justify-end items-center space-x-2 md:space-x-4 text-sm md:text-base">
+
             <!-- Controles de Tom (Transposição) -->
             <div class="flex items-center space-x-1 p-1 bg-teal-50 rounded-lg shadow-inner">
                 <span class="text-xs md:text-sm font-medium text-teal-800">Tom:</span>
-                <button onclick="transpose(-1)" class="p-1 w-8 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-150 shadow-md" title="Transpor Meio Tom para Baixo (♭)">
+                <button onclick="transpose(-1)"
+                    class="p-1 w-8 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-150 shadow-md"
+                    title="Transpor Meio Tom para Baixo (♭)">
                     ♭
                 </button>
                 <!-- <span id="current-key-display" class="font-bold text-sm w-8 text-center text-teal-900"></span> -->
-                <button onclick="transpose(1)" class="p-1 w-8 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-150 shadow-md" title="Transpor Meio Tom para Cima (#)">
+                <button onclick="transpose(1)"
+                    class="p-1 w-8 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition duration-150 shadow-md"
+                    title="Transpor Meio Tom para Cima (#)">
                     #
                 </button>
             </div>
 
             <!-- Controle de Colunas -->
-            <button id="columns-toggle" onclick="toggleColumns()" class="p-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-150 shadow-md text-xs md:text-sm">
+            <button id="columns-toggle" onclick="toggleColumns()"
+                class="p-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-150 shadow-md text-xs md:text-sm">
                 1 Coluna
             </button>
 
             <!-- Controle de Tamanho da Fonte -->
             <div class="flex items-center space-x-1 p-1 bg-gray-100 rounded-lg shadow-inner">
                 <span class="text-xs md:text-sm font-medium text-gray-700">Letra:</span>
-                <button onclick="changeFontSize(-1)" class="p-1 w-6 text-xs bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition duration-150 shadow-md" title="Diminuir Fonte">
+                <button onclick="changeFontSize(-1)"
+                    class="p-1 w-6 text-xs bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition duration-150 shadow-md"
+                    title="Diminuir Fonte">
                     A-
                 </button>
-                <button onclick="changeFontSize(1)" class="p-1 w-6 text-xs bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition duration-150 shadow-md" title="Aumentar Fonte">
+                <button onclick="changeFontSize(1)"
+                    class="p-1 w-6 text-xs bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition duration-150 shadow-md"
+                    title="Aumentar Fonte">
                     A+
                 </button>
             </div>
@@ -53,8 +67,16 @@
     <!-- 2. Conteúdo Principal (Sidebar e Visualizador) -->
     <main class="flex h-screen overflow-hidden">
         <!-- 2.1. Lista de Músicas (Sidebar) -->
-        <nav id="sidebar" class="w-full sm:w-64 bg-gray-800 text-white overflow-y-auto p-4 flex-shrink-0 hidden md:block">
+        <nav id="sidebar"
+            class="w-full sm:w-64 bg-gray-800 text-white overflow-y-auto p-4 flex-shrink-0 hidden md:block">
             <h2 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Músicas</h2>
+
+            <!-- Campo de Busca -->
+            <div class="mb-4">
+                <input type="text" id="search-input" placeholder="Buscar música ou trecho..."
+                    class="w-full p-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm">
+            </div>
+
             <ul id="song-list" class="space-y-2">
                 <!-- Lista de músicas será populada pelo JS -->
             </ul>
@@ -76,4 +98,5 @@
     <script src="songs.js"></script>
     <script src="scripts.js"></script>
 </body>
+
 </html>

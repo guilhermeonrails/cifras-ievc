@@ -40,10 +40,10 @@ function getTransposedChord(chord, offset) {
     const suffix = match[2];
 
     const normalizedRoot = normalizeNote(rootNote);
-    
+
     let rootIndex = NOTES.SHARP.indexOf(normalizedRoot);
     if (rootIndex === -1) {
-        return chord; 
+        return chord;
     }
 
     let newIndex = (rootIndex + offset) % 12;
@@ -57,23 +57,23 @@ function getTransposedChord(chord, offset) {
 
 function normalizeNote(note) {
     const flatMap = {
-        'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#', 
+        'Db': 'C#', 'Eb': 'D#', 'Gb': 'F#',
         'Ab': 'G#', 'Bb': 'A#', 'Cb': 'B', 'Fb': 'E'
     };
-    
+
     return flatMap[note] || note;
 }
 
 function renderChordSheet(rawText) {
     if (!rawText) return '';
 
-    const chordPattern = /\[([^\]]+)\]/g; 
+    const chordPattern = /\[([^\]]+)\]/g;
 
     const htmlContent = rawText.trim().split('\n').map(line => {
         if (line.trim() === '') {
             return '<br>'; // Linha vazia
         }
-        
+
         const processedLine = line.replace(chordPattern, (match, chord) => {
             const transposedChord = getTransposedChord(chord.trim(), transposeOffset);
             return `<span class="chord">${transposedChord}</span>`;
@@ -89,7 +89,7 @@ function renderChordSheet(rawText) {
 
 function transpose(direction) {
     transposeOffset += direction;
-    transposeOffset = (transposeOffset % 12 + 12) % 12; 
+    transposeOffset = (transposeOffset % 12 + 12) % 12;
     updateDisplay();
 }
 
@@ -122,10 +122,10 @@ function changeFontSize(direction) {
 
 function loadSong(songId) {
     currentSongId = songId;
-    transposeOffset = 0; 
-    currentFontSize = 1.1; 
+    transposeOffset = 0;
+    currentFontSize = 1.1;
     document.documentElement.style.setProperty('--cifra-font-size', '1.1rem');
-    
+
     document.querySelectorAll('#song-list li').forEach(li => {
         li.classList.remove('bg-teal-700', 'font-bold');
     });
@@ -143,7 +143,7 @@ function updateDisplay() {
     const displayElement = document.getElementById('cifra-display');
     // const keyDisplay = document.getElementById('current-key-display');
 
-    const originalRoot = 'tom'; 
+    const originalRoot = 'tom';
     let rootIndex = NOTES.SHARP.indexOf(originalRoot);
     let newIndex = (rootIndex + transposeOffset) % 12;
     if (newIndex < 0) newIndex += 12;
@@ -160,11 +160,16 @@ function updateDisplay() {
     }
 }
 
-function initializeSongList() {
+function initializeSongList(songsToRender = SONGS) {
     const listElement = document.getElementById('song-list');
-    listElement.innerHTML = ''; 
+    listElement.innerHTML = '';
 
-    SONGS.forEach(song => {
+    if (songsToRender.length === 0) {
+        listElement.innerHTML = '<li class="text-gray-400 p-2 text-sm italic">Nenhuma música encontrada.</li>';
+        return;
+    }
+
+    songsToRender.forEach(song => {
         const li = document.createElement('li');
         li.id = `song-item-${song.id}`;
         li.className = 'cursor-pointer p-2 rounded-lg hover:bg-gray-700 transition duration-150 text-base';
@@ -172,6 +177,16 @@ function initializeSongList() {
         li.onclick = () => loadSong(song.id);
         listElement.appendChild(li);
     });
+}
+
+function filterSongs(searchTerm) {
+    const term = searchTerm.toLowerCase();
+    const filteredSongs = SONGS.filter(song => {
+        const titleMatch = song.title.toLowerCase().includes(term);
+        const lyricsMatch = song.chord_text.toLowerCase().includes(term);
+        return titleMatch || lyricsMatch;
+    });
+    initializeSongList(filteredSongs);
 }
 
 // Adiciona a lógica para o menu hamburger e responsividade
@@ -213,6 +228,11 @@ window.onload = () => {
     const hamburgerButton = document.getElementById('hamburger-button');
     if (hamburgerButton) {
         hamburgerButton.addEventListener('click', toggleMenu);
+    }
+
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => filterSongs(e.target.value));
     }
 
     // Inicializa a lista de músicas e carrega a primeira música
