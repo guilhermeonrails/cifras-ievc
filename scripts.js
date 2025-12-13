@@ -14,6 +14,9 @@ let currentSongId = null;
 let transposeOffset = 0; // 0 significa tom original
 let isTwoColumns = false;
 let currentFontSize = 1.1; // Tamanho inicial em rem
+let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+let showFavoritesOnly = false;
+let currentSearchTerm = '';
 
 const MIN_FONT_SIZE = 0.8;
 const MAX_FONT_SIZE = 3.0;
@@ -128,12 +131,15 @@ function loadSong(songId) {
 
     document.querySelectorAll('#song-list li').forEach(li => {
         li.classList.remove('bg-teal-700', 'font-bold');
+        // Mantém a cor de fundo base se não for selecionado, mas remove o destaque
+        if (li.id !== `song-item-${songId}`) {
+            // Reset classes handled by render
+        }
     });
-    const clickedElement = document.getElementById(`song-item-${songId}`);
-    if (clickedElement) {
-        clickedElement.classList.add('bg-teal-700', 'font-bold');
-    }
 
+    // Re-render list to update selection state visually if needed, 
+    // but simpler to just toggle class on the element
+    renderSongList();
     updateDisplay();
 }
 
@@ -160,33 +166,87 @@ function updateDisplay() {
     }
 }
 
-function initializeSongList(songsToRender = SONGS) {
+function toggleFavorite(songId, event) {
+    if (event) {
+        event.stopPropagation();
+    }
+
+    if (favorites.has(songId)) {
+        favorites.delete(songId);
+    } else {
+        favorites.add(songId);
+    }
+
+    localStorage.setItem('favorites', JSON.stringify([...favorites]));
+    renderSongList();
+}
+
+function toggleFavoritesFilter() {
+    showFavoritesOnly = !showFavoritesOnly;
+    const btn = document.getElementById('favorites-filter-btn');
+    if (btn) {
+        if (showFavoritesOnly) {
+            btn.classList.add('bg-yellow-500', 'text-gray-900');
+            btn.classList.remove('bg-gray-600', 'text-gray-300');
+        } else {
+            btn.classList.remove('bg-yellow-500', 'text-gray-900');
+            btn.classList.add('bg-gray-600', 'text-gray-300');
+        }
+    }
+    renderSongList();
+}
+
+function renderSongList() {
     const listElement = document.getElementById('song-list');
     listElement.innerHTML = '';
 
-    if (songsToRender.length === 0) {
+    const term = currentSearchTerm.toLowerCase();
+
+    const filteredSongs = SONGS.filter(song => {
+        const matchesSearch = song.title.toLowerCase().includes(term) ||
+            song.chord_text.toLowerCase().includes(term);
+        const matchesFavorite = showFavoritesOnly ? favorites.has(song.id) : true;
+
+        return matchesSearch && matchesFavorite;
+    });
+
+    if (filteredSongs.length === 0) {
         listElement.innerHTML = '<li class="text-gray-400 p-2 text-sm italic">Nenhuma música encontrada.</li>';
         return;
     }
 
-    songsToRender.forEach(song => {
+    filteredSongs.forEach(song => {
+        const isFav = favorites.has(song.id);
+        const isSelected = song.id === currentSongId;
+
         const li = document.createElement('li');
         li.id = `song-item-${song.id}`;
-        li.className = 'cursor-pointer p-2 rounded-lg hover:bg-gray-700 transition duration-150 text-base';
-        li.textContent = song.title;
+        li.className = `flex justify-between items-center cursor-pointer p-2 rounded-lg transition duration-150 text-base ${isSelected ? 'bg-teal-700 font-bold' : 'hover:bg-gray-700'}`;
         li.onclick = () => loadSong(song.id);
+
+        const titleSpan = document.createElement('span');
+        titleSpan.textContent = song.title;
+
+        const favBtn = document.createElement('button');
+        favBtn.className = 'p-1 hover:text-yellow-400 focus:outline-none';
+        favBtn.innerHTML = isFav ? '★' : '☆'; // Estrela cheia ou vazia
+        favBtn.style.color = isFav ? '#FBBF24' : 'inherit'; // Amarelo se favorito
+        favBtn.onclick = (e) => toggleFavorite(song.id, e);
+        favBtn.title = isFav ? "Remover dos favoritos" : "Adicionar aos favoritos";
+
+        li.appendChild(titleSpan);
+        li.appendChild(favBtn);
         listElement.appendChild(li);
     });
 }
 
+function initializeSongList() {
+    renderSongList();
+}
+
 function filterSongs(searchTerm) {
-    const term = searchTerm.toLowerCase();
-    const filteredSongs = SONGS.filter(song => {
-        const titleMatch = song.title.toLowerCase().includes(term);
-        const lyricsMatch = song.chord_text.toLowerCase().includes(term);
-        return titleMatch || lyricsMatch;
-    });
-    initializeSongList(filteredSongs);
+    currentSearchTerm = searchTerm;
+    renderSongList();
 }
 
 // Adiciona a lógica para o menu hamburger e responsividade
