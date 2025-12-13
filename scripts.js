@@ -267,20 +267,64 @@ function toggleMenu() {
 let autoScrollInterval = null;
 function toggleAutoScroll() {
     const button = document.getElementById('auto-scroll-button');
+    const playIcon = document.getElementById('scroll-icon-play');
+    const pauseIcon = document.getElementById('scroll-icon-pause');
 
     if (autoScrollInterval) {
+        // Parar rolagem
         clearInterval(autoScrollInterval);
         autoScrollInterval = null;
-        button.textContent = 'Ativar Rolagem';
-        button.classList.remove('bg-red-600');
-        button.classList.add('bg-green-600');
+
+        // Atualizar ícones
+        if (playIcon && pauseIcon) {
+            playIcon.classList.remove('hidden');
+            pauseIcon.classList.add('hidden');
+        }
+
+        // Atualizar estilo do botão (opcional, manter transparente)
+        button.classList.remove('bg-opacity-75');
+        button.classList.add('bg-opacity-50');
     } else {
+        // Iniciar rolagem
         autoScrollInterval = setInterval(() => {
-            window.scrollBy({ top: 1, behavior: 'smooth' });
-        }, 50); // Ajuste a velocidade da rolagem alterando o intervalo
-        button.textContent = 'Parar Rolagem';
-        button.classList.remove('bg-green-600');
-        button.classList.add('bg-red-600');
+            // Rola o elemento 'cifra-viewer' ou a janela, dependendo do layout.
+            // Como o 'main' tem overflow-hidden e o 'cifra-viewer' tem scroll (ou o sidebar), 
+            // precisamos verificar quem tem o scroll.
+            // No layout atual:
+            // <main class="flex h-screen overflow-hidden">
+            //    <nav id="sidebar" ... overflow-y-auto ...>
+            //    <section id="cifra-viewer" ... overflow-hidden ...> <div class="w-full h-full"> ... overflow?
+
+            // O layout original tinha <section id="cifra-viewer" class="flex-grow p-4 md:p-8 bg-white overflow-hidden">
+            // E dentro dele o conteúdo. Se o conteúdo for maior que a tela, quem rola?
+            // Vamos ajustar para rolar a janela ou o elemento correto.
+            // Se o 'cifra-viewer' tiver overflow-y-auto, é ele.
+            // Se a janela rolar, é window.scrollBy.
+
+            // Vamos assumir que o usuário quer rolar a página inteira ou o container da cifra.
+            // Vou tentar rolar a janela primeiro, mas se o layout for fixo (h-screen), preciso rolar o container.
+
+            // Ajuste rápido: verificar se o container principal tem scroll.
+            // Se o layout é 'h-screen overflow-hidden', o scroll deve estar em algum filho.
+            // Vou adicionar overflow-y-auto ao 'cifra-viewer' se não tiver.
+
+            const viewer = document.getElementById('cifra-viewer');
+            if (viewer) {
+                viewer.scrollBy({ top: 1, behavior: 'auto' }); // 'auto' é mais performático que 'smooth' para intervalos curtos
+            } else {
+                window.scrollBy({ top: 1, behavior: 'auto' });
+            }
+        }, 50);
+
+        // Atualizar ícones
+        if (playIcon && pauseIcon) {
+            playIcon.classList.add('hidden');
+            pauseIcon.classList.remove('hidden');
+        }
+
+        // Atualizar estilo do botão para indicar atividade
+        button.classList.remove('bg-opacity-50');
+        button.classList.add('bg-opacity-75');
     }
 }
 
