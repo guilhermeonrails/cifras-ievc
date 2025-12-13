@@ -1,8 +1,14 @@
 const SONGS = [
-    { 
-        id: 1, 
-        title: "Vem, esta é a Hora", 
-        chord_text: `
+  {
+    id: 999,
+    title: "Deus é o meu refúgio",
+    chord_text: "",
+    chart_image: "charts/Deus é o meu refúgio.png"
+  },
+  {
+    id: 1,
+    title: "Vem, esta é a Hora",
+    chord_text: `
 [D]                      [D4]  [D]
 Vem, esta é a hora da adoração
  [A]                  [Em]  [G]
@@ -52,11 +58,12 @@ Vem, assim como estás diante do Pai
  [E]
 Vem, Vem, Vem, Vem, Vem
 `
-    },
-    { 
-        id: 2, 
-        title: "Ousado Amor", 
-        chord_text: `
+    , chart_image: "assets/chart_example.png"
+  },
+  {
+    id: 2,
+    title: "Ousado Amor",
+    chord_text: `
 [C#m]                [B4]
     Antes de eu falar
              [A]
@@ -150,11 +157,11 @@ Escala montanhas, pra me encontrar[C#m]            [B4]
                [A]                  [E]
 Destrói as mentiras, pra me encontrar
 `
-    },
-    { 
-        id: 3, 
-        title: "Perto quero estar", 
-        chord_text: `
+  },
+  {
+    id: 3,
+    title: "Perto quero estar",
+    chord_text: `
 [A]                [D]
   Perto quero estar
 [E]                 [A]
@@ -255,11 +262,11 @@ As circunstâncias
 [D]            [E]  [A]
   Somente a ti Jesus
 `
-    },
-    { 
-        id: 4, 
-        title: "Eu vou construir", 
-        chord_text: `
+  },
+  {
+    id: 4,
+    title: "Eu vou construir",
+    chord_text: `
 [A]                 [D]
    Digno desta canção só Tu és Senhor
 [A]                  [D]
@@ -399,12 +406,12 @@ E enche o meu coração do amor que faz
 Mudar o mundo
 `
 
-    }
-    ,
-    { 
-        id: 5, 
-        title: "A alegria está no coração", 
-        chord_text: `
+  }
+  ,
+  {
+    id: 5,
+    title: "A alegria está no coração",
+    chord_text: `
 
 [C]            
 alegria está no coração     
@@ -439,12 +446,12 @@ Posso pisar numa tropa e saltar as muralhas
 Aleluiaaaa! Aleluiaaa!
 `
 
-    }
-    ,
-    { 
-        id: 6, 
-        title: "A benção", 
-        chord_text: `
+  }
+  ,
+  {
+    id: 6,
+    title: "A benção",
+    chord_text: `
 
 [G]                 [C]  
   Que o Senhor te   abençoe
@@ -481,11 +488,11 @@ Tua família e teus filhos
 E os filhos dos teus filhos
 `
 
-    },
-    { 
-        id: 7, 
-        title: "A bondade de Deus", 
-        chord_text: `
+  },
+  {
+    id: 7,
+    title: "A bondade de Deus",
+    chord_text: `
 [D]
 Te amo, Deus
       [G]          [D]
@@ -546,11 +553,11 @@ Entrego tudo a Ti
 Me seguirá Senhor
 `
 
-    },
-    { 
-        id: 8, 
-        title: "Abra os olhos", 
-        chord_text: `
+  },
+  {
+    id: 8,
+    title: "Abra os olhos",
+    chord_text: `
 [E]
 Abra os olhos do meu coração
 [B/D#]
@@ -602,11 +609,11 @@ Quero Te abraçar
 Quero Te ver
 `
 
-    },
-    { 
-        id: 9, 
-        title: "Aleluia (Agnus Dei)", 
-        chord_text: `
+  },
+  {
+    id: 9,
+    title: "Aleluia (Agnus Dei)",
+    chord_text: `
 [C]   [F]  [C]
 Ale-lu-ia
 [C] [F]  
@@ -643,11 +650,11 @@ Digno de Louvor
 Amem
 `
 
-    },
-    { 
-        id: 10, 
-        title: "Existe um rio", 
-        chord_text: `
+  },
+  {
+    id: 10,
+    title: "Existe um rio",
+    chord_text: `
 [D]                  [Em]
 Existe um rio, Senhor
   [D]                      [Em]
@@ -705,11 +712,11 @@ Tu és o rio, Senhor
 Tu és o rio, Senhor
 `
 
-    },
-    { 
-        id: 11, 
-        title: "Ainda que a figueira", 
-        chord_text: `
+  },
+  {
+    id: 11,
+    title: "Ainda que a figueira",
+    chord_text: `
 [F#m]            [E]
    Tu és a minha porção
 [Bm7]          [D]
@@ -744,11 +751,11 @@ Nos campos
         [G]           [D]
 Eu me alegrarei em Ti
 `
-    },
-    { 
-        id: 13, 
-        title: "Alegria - Valadão", 
-        chord_text: `
+  },
+  {
+    id: 13,
+    title: "Alegria - Valadão",
+    chord_text: `
 [C]     [Am]        [Em] 
 TU ME AMAS COMO SOU 
             [G]          [C] 
@@ -781,12 +788,12 @@ TUA ALEGRIA É MINHA VIDA
             [Dm]      [G] 
 RECEBO DELA HOJE, AGORA
 `
-    },
+  },
 
-    { 
-        id: 14, 
-        title: "Aleluia ao Rei", 
-        chord_text: `
+  {
+    id: 14,
+    title: "Aleluia ao Rei",
+    chord_text: `
 Verso e Refrão
 [D] | [Am] | [G] | [D] |
 
@@ -794,11 +801,11 @@ Instrumental
 [Em] | [G] | [Bm] | [A] |
 [Em] | [G] | [A]     | [G] |
 `
-    },
-    { 
-        id: 15, 
-        title: "Alegria - Valadão", 
-        chord_text: `
+  },
+  {
+    id: 15,
+    title: "Alegria - Valadão",
+    chord_text: `
 [C]     [Am]        [Em] 
 TU ME AMAS COMO SOU 
             [G]          [C] 
@@ -831,11 +838,11 @@ TUA ALEGRIA É MINHA VIDA
             [Dm]      [G] 
 RECEBO DELA HOJE, AGORA
 `
-    },
-    { 
-        id: 16, 
-        title: "Alfa e Ômega", 
-        chord_text: `
+  },
+  {
+    id: 16,
+    title: "Alfa e Ômega",
+    chord_text: `
 [A]          [E]   
 Não há outro como Tu
     [A]        [E]   
@@ -861,11 +868,11 @@ Tu és Jesus,  tu és Jesus
    [A]          [F#m]   [B]
 Tu és Jesus, tu és Jesus
 `
-    },
-    { 
-        id: 17, 
-        title: "Ao cheiro das águas", 
-        chord_text: `
+  },
+  {
+    id: 17,
+    title: "Ao cheiro das águas",
+    chord_text: `
 [C]            [G#º]
 Há esperança para o ferido
      [Am]                 [F]         [F]
@@ -899,11 +906,11 @@ Seus ramos se renovarão
 Não cessarão os seus frutos e viverá
 ( [Am]   [Em]   [Am]   [Em]   [F]   [Fm]     )
 `
-    },
-    { 
-        id: 18, 
-        title: "Oceanos", 
-        chord_text: `
+  },
+  {
+    id: 18,
+    title: "Oceanos",
+    chord_text: `
 [Bm] | [D] | [A] | [G] |
 
 

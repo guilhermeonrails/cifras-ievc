@@ -17,6 +17,7 @@ let currentFontSize = 1.1; // Tamanho inicial em rem
 let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
 let showFavoritesOnly = false;
 let currentSearchTerm = '';
+let viewMode = 'text'; // 'text' or 'image'
 
 const MIN_FONT_SIZE = 0.8;
 const MAX_FONT_SIZE = 3.0;
@@ -123,10 +124,23 @@ function changeFontSize(direction) {
     document.documentElement.style.setProperty('--cifra-font-size', `${currentFontSize.toFixed(1)}rem`);
 }
 
+function toggleViewMode(mode) {
+    viewMode = mode;
+    updateDisplay();
+}
+
 function loadSong(songId) {
     currentSongId = songId;
     transposeOffset = 0;
     currentFontSize = 1.1;
+
+    const song = SONGS.find(s => s.id === songId);
+    if (song && song.chart_image && (!song.chord_text || song.chord_text.trim() === '')) {
+        viewMode = 'image';
+    } else {
+        viewMode = 'text';
+    }
+
     document.documentElement.style.setProperty('--cifra-font-size', '1.1rem');
 
     document.querySelectorAll('#song-list li').forEach(li => {
@@ -137,7 +151,7 @@ function loadSong(songId) {
         }
     });
 
-    // Re-render list to update selection state visually if needed, 
+    // Re-render list to update selection state visually if needed,
     // but simpler to just toggle class on the element
     renderSongList();
     updateDisplay();
@@ -147,6 +161,12 @@ function updateDisplay() {
     const song = SONGS.find(s => s.id === currentSongId);
     const titleElement = document.getElementById('cifra-title');
     const displayElement = document.getElementById('cifra-display');
+    const chartDisplay = document.getElementById('chart-display');
+    const chartImage = document.getElementById('chart-image');
+    const viewToggle = document.getElementById('view-toggle');
+    const btnText = document.getElementById('view-btn-text');
+    const btnImage = document.getElementById('view-btn-image');
+
     // const keyDisplay = document.getElementById('current-key-display');
 
     const originalRoot = 'tom';
@@ -159,10 +179,45 @@ function updateDisplay() {
 
     if (song) {
         titleElement.textContent = song.title;
-        displayElement.innerHTML = renderChordSheet(song.chord_text);
+
+        // Handle View Toggle Visibility
+        if (song.chart_image) {
+            viewToggle.classList.remove('hidden');
+            viewToggle.classList.add('flex');
+        } else {
+            viewToggle.classList.add('hidden');
+            viewToggle.classList.remove('flex');
+            viewMode = 'text'; // Force text mode if no image
+        }
+
+        // Handle View Mode Rendering
+        if (viewMode === 'image' && song.chart_image) {
+            displayElement.classList.add('hidden');
+            chartDisplay.classList.remove('hidden');
+            chartImage.src = song.chart_image;
+
+            // Update Buttons
+            btnText.classList.remove('bg-indigo-600', 'text-white');
+            btnText.classList.add('bg-gray-300', 'text-gray-700');
+            btnImage.classList.add('bg-indigo-600', 'text-white');
+            btnImage.classList.remove('bg-gray-300', 'text-gray-700');
+        } else {
+            displayElement.classList.remove('hidden');
+            chartDisplay.classList.add('hidden');
+            displayElement.innerHTML = renderChordSheet(song.chord_text);
+
+            // Update Buttons
+            btnText.classList.add('bg-indigo-600', 'text-white');
+            btnText.classList.remove('bg-gray-300', 'text-gray-700');
+            btnImage.classList.remove('bg-indigo-600', 'text-white');
+            btnImage.classList.add('bg-gray-300', 'text-gray-700');
+        }
+
     } else {
         titleElement.textContent = "Nenhuma Música Selecionada";
         displayElement.innerHTML = '<p class="text-gray-500 text-center mt-20">Selecione uma música no menu à esquerda para visualizar a cifra.</p>';
+        chartDisplay.classList.add('hidden');
+        viewToggle.classList.add('hidden');
     }
 }
 
@@ -226,6 +281,18 @@ function renderSongList() {
 
         const titleSpan = document.createElement('span');
         titleSpan.textContent = song.title;
+        titleSpan.className = 'flex-grow truncate'; // Ensure title takes available space
+
+        const iconsDiv = document.createElement('div');
+        iconsDiv.className = 'flex items-center space-x-2 flex-shrink-0';
+
+        if (song.chart_image) {
+            const chartIcon = document.createElement('span');
+            chartIcon.innerHTML = '🎼'; // Icon for chart/score
+            chartIcon.title = 'Possui Partitura';
+            chartIcon.className = 'text-xs text-indigo-400';
+            iconsDiv.appendChild(chartIcon);
+        }
 
         const favBtn = document.createElement('button');
         favBtn.className = 'p-1 hover:text-yellow-400 focus:outline-none';
@@ -234,8 +301,10 @@ function renderSongList() {
         favBtn.onclick = (e) => toggleFavorite(song.id, e);
         favBtn.title = isFav ? "Remover dos favoritos" : "Adicionar aos favoritos";
 
+        iconsDiv.appendChild(favBtn);
+
         li.appendChild(titleSpan);
-        li.appendChild(favBtn);
+        li.appendChild(iconsDiv);
         listElement.appendChild(li);
     });
 }
@@ -323,7 +392,6 @@ function toggleAutoScroll() {
         }
 
         // Atualizar estilo do botão para indicar atividade
-        button.classList.remove('bg-opacity-50');
         button.classList.add('bg-opacity-75');
     }
 }
@@ -352,3 +420,4 @@ window.transpose = transpose;
 window.toggleColumns = toggleColumns;
 window.changeFontSize = changeFontSize;
 window.toggleAutoScroll = toggleAutoScroll;
+window.toggleViewMode = toggleViewMode;
