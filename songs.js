@@ -936,7 +936,110 @@ Não cessarão os seus frutos e viverá
   {
     id: 21,
     title: "Eu sou teu pai",
-    chord_text: "",
+    chord_text: `
+[G]            [D]     [Em]
+Muitos me conhecem pelo nome
+[C]               [G]
+Outros me conhecem
+   [D]
+Só   de ouvir falar
+[G]           [D]             [Em]
+Alguns são de perto e outros de longe
+ [C]               [G]        [D]
+Com licença, eu vou me apresentar
+
+[Pré-Refrão]
+
+              [C]
+Sabe quem Eu sou?
+                               [G]
+Eu sou aquele que te ouviu chorar
+                               [D]
+Eu sou o único que escolheu ficar
+
+Amigo, confidente
+                  [G]
+O Pai que sempre sabe
+           [Am] [G]
+Te aconselhar
+           [C]
+Mais conhecido como Yeshua
+          [G]
+O pão da vida, Jeová Rafah
+          [Am]
+Eu sou a luz no fim do túnel
+   [D]                 [G]
+A força quando a sua acabar
+
+[Refrão]
+
+[G]          [C]
+E se precisar
+   [Em]    [G]
+É só chamar
+             [Em]
+Não preciso de formalidades
+     [D]
+Eu quero intimidade
+            [C]           [G]
+Eu sou teu Pai é só chamar
+             [Em]
+Não é sobre religiosidade
+     [D]
+Eu quero intimidade
+
+[Ponte]
+
+   [C]
+Estar contigo em cada dia
+ [D]
+Na angústia ou na alegria
+ [Em]               [D]
+Na felicidade ou na dificuldade
+      [C]
+Não quero algo de momento
+     [D]
+Eu quero um relacionamento
+ [Em]               [D]
+Com profundidade na intimidade
+
+[Refrão] (Repete)
+
+[G]          [C9]
+E se precisar
+   [Em]    [G]
+É só chamar
+             [Em]
+Não preciso de formalidades
+     [D]
+Eu quero intimidade
+            [C]           [G]
+Eu sou teu Pai é só chamar
+             [Em]
+Não é sobre religiosidade
+     [D]
+Eu quero intimidade
+
+[Final]
+
+            [C]           [G]
+Eu sou teu Pai é só chamar
+            [C]           [G]
+Eu sou teu Pai é só chamar
+            [C]           [G]
+Eu sou teu Pai é só chamar
+            [C]           [G]
+Eu sou teu Pai é só chamar
+            [C]           [G]
+Eu sou teu Pai é só chamar
+            [C]           [G]
+Eu sou teu Pai é só chamar
+             [Em]
+Não preciso de formalidades
+     [D]
+Eu quero intimidade
+    
+    `,
     chart_image: "charts/Eu sou teu pai.png"
   },
   {
