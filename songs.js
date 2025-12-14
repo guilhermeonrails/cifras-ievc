@@ -1037,7 +1037,7 @@ Eu sou teu Pai é só chamar
              [Em]
 Não preciso de formalidades
      [D]
-Eu quero intimidade
+Eu quero intimidade 
     
     `,
     chart_image: "charts/Eu sou teu pai.png"
