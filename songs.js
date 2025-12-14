@@ -405,7 +405,7 @@ E enche o meu coração do amor que faz
  [F#m]
 Mudar o mundo
 `,
-    chart_image: "charts/Eu vou construir.jpeg"
+    chart_image: "charts/Eu vou construir.png"
   }
   ,
   {
@@ -926,5 +926,23 @@ Não cessarão os seus frutos e viverá
     title: "Só Tu és santo",
     chord_text: "",
     chart_image: "charts/Só tu es santo.jpeg"
+  },
+  {
+    id: 20,
+    title: "Poderoso Deus",
+    chord_text: "",
+    chart_image: "charts/Poderoso Deus.png"
+  },
+  {
+    id: 21,
+    title: "Eu sou teu pai",
+    chord_text: "",
+    chart_image: "charts/Eu sou teu pai.png"
+  },
+  {
+    id: 22,
+    title: "Teu amor não falha",
+    chord_text: "",
+    chart_image: "charts/Teu amor não falha.png"
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
