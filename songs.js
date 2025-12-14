@@ -404,8 +404,8 @@ Mostra quem Tu és
 E enche o meu coração do amor que faz
  [F#m]
 Mudar o mundo
-`
-
+`,
+    chart_image: "charts/Eu vou construir.jpeg"
   }
   ,
   {
@@ -921,4 +921,10 @@ Não cessarão os seus frutos e viverá
 [Guia-me]
 | [Bm] | [G] | [D] | [F#m]  ||
     `},
+  {
+    id: 19,
+    title: "Só Tu és santo",
+    chord_text: "",
+    chart_image: "charts/Só tu es santo.jpeg"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));

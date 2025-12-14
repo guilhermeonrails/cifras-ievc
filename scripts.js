@@ -356,32 +356,20 @@ function toggleAutoScroll() {
     } else {
         // Iniciar rolagem
         autoScrollInterval = setInterval(() => {
-            // Rola o elemento 'cifra-viewer' ou a janela, dependendo do layout.
-            // Como o 'main' tem overflow-hidden e o 'cifra-viewer' tem scroll (ou o sidebar), 
-            // precisamos verificar quem tem o scroll.
-            // No layout atual:
-            // <main class="flex h-screen overflow-hidden">
-            //    <nav id="sidebar" ... overflow-y-auto ...>
-            //    <section id="cifra-viewer" ... overflow-hidden ...> <div class="w-full h-full"> ... overflow?
-
-            // O layout original tinha <section id="cifra-viewer" class="flex-grow p-4 md:p-8 bg-white overflow-hidden">
-            // E dentro dele o conteúdo. Se o conteúdo for maior que a tela, quem rola?
-            // Vamos ajustar para rolar a janela ou o elemento correto.
-            // Se o 'cifra-viewer' tiver overflow-y-auto, é ele.
-            // Se a janela rolar, é window.scrollBy.
-
-            // Vamos assumir que o usuário quer rolar a página inteira ou o container da cifra.
-            // Vou tentar rolar a janela primeiro, mas se o layout for fixo (h-screen), preciso rolar o container.
-
-            // Ajuste rápido: verificar se o container principal tem scroll.
-            // Se o layout é 'h-screen overflow-hidden', o scroll deve estar em algum filho.
-            // Vou adicionar overflow-y-auto ao 'cifra-viewer' se não tiver.
-
-            const viewer = document.getElementById('cifra-viewer');
-            if (viewer) {
-                viewer.scrollBy({ top: 1, behavior: 'auto' }); // 'auto' é mais performático que 'smooth' para intervalos curtos
+            // Verifica o modo de visualização atual
+            if (viewMode === 'image') {
+                const chartDisplay = document.getElementById('chart-display');
+                if (chartDisplay) {
+                    chartDisplay.scrollBy({ top: 1, behavior: 'auto' });
+                }
             } else {
-                window.scrollBy({ top: 1, behavior: 'auto' });
+                // Modo Texto
+                const viewer = document.getElementById('cifra-viewer');
+                if (viewer) {
+                    viewer.scrollBy({ top: 1, behavior: 'auto' });
+                } else {
+                    window.scrollBy({ top: 1, behavior: 'auto' });
+                }
             }
         }, 50);
 
