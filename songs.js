@@ -1048,4 +1048,10 @@ Eu quero intimidade
     chord_text: "",
     chart_image: "charts/Teu amor não falha.png"
   },
+  {
+    id: 23,
+    title: "A promessa nasceu",
+    chord_text: "",
+    chart_image: "charts/A promessa nasceu.jpeg"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
