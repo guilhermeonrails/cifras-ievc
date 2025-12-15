@@ -1054,4 +1054,10 @@ Eu quero intimidade
     chord_text: "",
     chart_image: "charts/A promessa nasceu.jpeg"
   },
+  {
+    id: 24,
+    title: "Meia Noite",
+    chord_text: "",
+    chart_image: "charts/Meia noite.jpeg"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
