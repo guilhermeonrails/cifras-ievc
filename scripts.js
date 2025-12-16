@@ -197,10 +197,13 @@ function updateDisplay() {
             chartImage.src = song.chart_image;
 
             // Update Buttons
-            btnText.classList.remove('bg-indigo-600', 'text-white');
             btnText.classList.add('bg-gray-300', 'text-gray-700');
             btnImage.classList.add('bg-indigo-600', 'text-white');
             btnImage.classList.remove('bg-gray-300', 'text-gray-700');
+
+            // Hide columns toggle
+            const columnsToggle = document.getElementById('columns-toggle');
+            if (columnsToggle) columnsToggle.classList.add('hidden');
         } else {
             displayElement.classList.remove('hidden');
             chartDisplay.classList.add('hidden');
@@ -211,6 +214,10 @@ function updateDisplay() {
             btnText.classList.remove('bg-gray-300', 'text-gray-700');
             btnImage.classList.remove('bg-indigo-600', 'text-white');
             btnImage.classList.add('bg-gray-300', 'text-gray-700');
+
+            // Show columns toggle
+            const columnsToggle = document.getElementById('columns-toggle');
+            if (columnsToggle) columnsToggle.classList.remove('hidden');
         }
 
     } else {
