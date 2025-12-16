@@ -143,20 +143,25 @@ Escala montanhas, pra me encontrar
 [C#m]            [B4]
     Derruba muralhas
                [A]                  [E]
-Destrói as mentiras, pra me encontrar[C#m]                   [B4]
+Destrói as mentiras, pra me encontrar
+[C#m]                   [B4]
     Traz luz para as sombras
            [A]                   [E]
-Escala montanhas, pra me encontrar[C#m]            [B4]
-    Derruba muralhas
-               [A]                  [E]
-Destrói as mentiras, pra me encontrar[C#m]                   [B4]
-    Traz luz para as sombras
-           [A]                   [E]
-Escala montanhas, pra me encontrar[C#m]            [B4]
+Escala montanhas, pra me encontrar
+[C#m]            [B4]
     Derruba muralhas
                [A]                  [E]
 Destrói as mentiras, pra me encontrar
-`
+[C#m]                   [B4]
+    Traz luz para as sombras
+           [A]                   [E]
+Escala montanhas, pra me encontrar
+[C#m]            [B4]
+    Derruba muralhas
+               [A]                  [E]
+Destrói as mentiras, pra me encontrar
+`,
+    chart_image: "charts/Ousado amor.png",
   },
   {
     id: 3,
@@ -1083,5 +1088,171 @@ Eu quero intimidade
     title: "Tu és santo",
     chord_text: "",
     chart_image: "charts/Tu es santo.jpeg"
+  },
+  {
+    id: 29,
+    title: "Fogo de Deus",
+    chord_text: `
+  Intro 2x: [Em]  [D/F#]  [G]
+
+[Em]        [D/F#]    [G]
+Há muito mais que isto
+[C9]       [Em]    [D/F#]     [C9]
+Espirito santo sopra em nós
+[Em]        [D/F#]    [G]
+Há muito mais que isto
+[C9]       [Em]       [D/F#]      [C9]
+Espirito santo esperamos por ti
+[Am]       [G/B]      [D/F#]
+Enche-nos outra vez
+[Am]       [G/B]      [D/F#]
+Enche-nos outra vez
+
+[Refrão]
+         [G]
+Fogo de deus
+         [D/F#]
+Acende em nós
+[Em]                [C]
+Paixão pelo teu nome
+
+            [G]
+Espírito de DEUS
+      [D/F#]
+Derrama aqui
+     [G/B]
+O teu poder
+      [D]
+O teu amor
+    [C]
+Em nós
+
+
+[C]                     [D]
+Vem e acende em nós SENHOR
+                      [Em]
+Vem e acende em nós SENHOR
+                       [D]
+Vem e acende em nós paixão pelo teu nome.
+
+
+    `,
+    chart_image: "charts/Fogo de Deus.png"
+  },
+  {
+    id: 30,
+    title: "Louve (Praise)",
+    chord_text: `
+[Primeira Parte]
+
+    [A]
+Eu louvo nos vales
+ [A4]        [A]
+Louvo nos montes
+ [E]
+Louvo no dia
+[D]           [A]    [A4] 
+  Louvo na noite
+
+    [A]
+Eu louvo se vejo
+    [A4]        [A]
+Que estou cercado
+      [E]         [D]
+Pois meus inimigos
+            [A]
+Serão derrotados
+
+    [E]
+Enquanto eu viver
+ [D]
+Minh'alma irá cantar
+
+[Refrão]
+
+ [F#m]  [D]        [A]
+Lou__ve ao Senhor
+            [E]
+Todo o meu ser
+ [F#m]  [D]        [A]
+Lou__ve ao Senhor
+            [E]
+Todo o meu ser
+
+[Segunda Parte]
+
+    [A]
+Eu louvo se vejo
+ [A4]       [A]
+Louvo se não
+    [E]             [D]
+Eu louvo pois sei
+              [A]
+Que estou em Tuas mãos
+     [A]
+Guerreio louvando
+   [Bm]    [C#m]
+Em adoração
+
+ [E]               [D]
+Com o meu louvor
+           [A]
+Muralhas cairão
+
+    [E]
+Enquanto eu viver
+ [D]
+Minh'alma irá cantar
+
+[Refrão]
+
+[Ponte]
+
+     [F#m]
+Não vou me calar
+     [D]
+Meu Deus vivo está
+ [A]              [E]
+Como não Te adorar?
+
+ [F#m]  [D]        [A]
+Lou__ve ao Senhor
+            [E]
+Todo o meu ser
+
+( [A]  [A4]  [A]  [A4]  )
+( [A]  [A4]  [A]  [A4]  )
+
+[Terceira Parte]
+
+ [A]
+Louvo ao Rei
+ [A4] 
+Louvo ao Senhor
+ [A7M]                [A4] 
+Louvo o Cristo que ressuscitou
+
+ [A]
+Louvo Aquele
+    [A4] 
+Que é justo e fiel
+   [A7M]              [A4] 
+O Deus soberano na terra e Céu
+
+ [A]
+Louvo ao Rei
+ [Bm]
+Louvo ao Senhor
+ [F#m]                [D]
+Louvo o Cristo que ressuscitou
+
+ [A]
+Louvo Aquele
+       [Bm]
+Que é justo e fiel
+   [F#m]              [D]
+O Deus soberano na terra e Céu
+    `,
+    chart_image: "charts/Louve Praise.png"
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
