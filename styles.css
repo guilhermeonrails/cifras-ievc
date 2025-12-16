@@ -32,3 +32,8 @@ body {
     max-height: calc(100vh - 4rem - 2px); /* Altura da tela menos o cabeçalho */
     overflow-y: auto;
 }
+
+/* Modificação para tela cheia */
+#cifra-viewer.fullscreen-viewer {
+    max-height: 100vh !important;
+}

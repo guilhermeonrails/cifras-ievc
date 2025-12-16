@@ -1060,4 +1060,28 @@ Eu quero intimidade
     chord_text: "",
     chart_image: "charts/Meia noite.jpeg"
   },
+  {
+    id: 25,
+    title: "Quebrantado",
+    chord_text: "",
+    chart_image: "charts/Quebrantado.png"
+  },
+  {
+    id: 26,
+    title: "Ele é",
+    chord_text: "",
+    chart_image: "charts/Ele é.jpeg"
+  },
+  {
+    id: 27,
+    title: "Imutável",
+    chord_text: "",
+    chart_image: "charts/Imutavel.jpeg"
+  },
+  {
+    id: 28,
+    title: "Tu és santo",
+    chord_text: "",
+    chart_image: "charts/Tu es santo.jpeg"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));

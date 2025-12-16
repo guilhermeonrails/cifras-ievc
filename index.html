@@ -100,7 +100,21 @@
         </nav>
 
         <!-- 2.2. Visualizador de Cifra -->
-        <section id="cifra-viewer" class="flex-grow p-4 md:p-8 bg-white overflow-y-auto">
+        <section id="cifra-viewer" class="flex-grow p-4 md:p-8 bg-white overflow-y-auto relative">
+            <!-- Botão de Tela Cheia (Mobile) -->
+            <button id="fullscreen-btn" onclick="toggleFullscreen()"
+                class="md:hidden absolute top-4 right-4 p-2 bg-gray-100 bg-opacity-50 text-gray-600 rounded-full hover:bg-opacity-100 transition duration-150 z-10">
+                <svg id="icon-maximize" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                </svg>
+                <svg id="icon-minimize" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
             <div class="w-full h-full">
                 <h2 id="cifra-title" class="text-3xl font-extrabold mb-4 text-center text-gray-900"></h2>
                 <div id="cifra-display" class="cifra-content columns-1 transition-all duration-300">
@@ -117,7 +131,7 @@
 
     <!-- Botão Flutuante de Auto-Scroll -->
     <button id="auto-scroll-button" onclick="toggleAutoScroll()"
-        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-30 text-white rounded-full p-4 hover:bg-opacity-75 transition shadow-lg z-50 flex items-center justify-center w-16 h-16 focus:outline-none">
+        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-10 text-white rounded-full p-4 hover:bg-opacity-75 transition shadow-lg z-50 flex items-center justify-center w-16 h-16 focus:outline-none">
         <!-- Ícone de Play (SVG) -->
         <svg id="scroll-icon-play" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
@@ -127,7 +141,7 @@
                 d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <!-- Ícone de Pause (SVG) - Inicialmente oculto -->
-        <svg id="scroll-icon-pause" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
+        <svg id="scroll-icon-pause" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden bg-opacity-10" fill="none"
             viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />

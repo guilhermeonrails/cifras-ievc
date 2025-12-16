@@ -384,6 +384,30 @@ function toggleAutoScroll() {
     }
 }
 
+// Função para alternar o modo de tela cheia (mobile)
+function toggleFullscreen() {
+    const header = document.querySelector('header');
+    const btnMax = document.getElementById('icon-maximize');
+    const btnMin = document.getElementById('icon-minimize');
+    const cifraViewer = document.getElementById('cifra-viewer');
+
+    if (header) {
+        if (header.classList.contains('hidden')) {
+            // Sair do modo tela cheia
+            header.classList.remove('hidden');
+            if (btnMax) btnMax.classList.remove('hidden');
+            if (btnMin) btnMin.classList.add('hidden');
+            if (cifraViewer) cifraViewer.classList.remove('fullscreen-viewer');
+        } else {
+            // Entrar no modo tela cheia
+            header.classList.add('hidden');
+            if (btnMax) btnMax.classList.add('hidden');
+            if (btnMin) btnMin.classList.remove('hidden');
+            if (cifraViewer) cifraViewer.classList.add('fullscreen-viewer');
+        }
+    }
+}
+
 window.onload = () => {
     const hamburgerButton = document.getElementById('hamburger-button');
     if (hamburgerButton) {
@@ -409,3 +433,4 @@ window.toggleColumns = toggleColumns;
 window.changeFontSize = changeFontSize;
 window.toggleAutoScroll = toggleAutoScroll;
 window.toggleViewMode = toggleViewMode;
+window.toggleFullscreen = toggleFullscreen;
