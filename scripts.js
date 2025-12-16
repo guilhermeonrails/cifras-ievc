@@ -197,6 +197,7 @@ function updateDisplay() {
             chartImage.src = song.chart_image;
 
             // Update Buttons
+            btnText.classList.remove('bg-indigo-600', 'text-white');
             btnText.classList.add('bg-gray-300', 'text-gray-700');
             btnImage.classList.add('bg-indigo-600', 'text-white');
             btnImage.classList.remove('bg-gray-300', 'text-gray-700');
@@ -329,13 +330,16 @@ function filterSongs(searchTerm) {
 function toggleMenu() {
     const sidebar = document.getElementById('sidebar');
     const cifraViewer = document.getElementById('cifra-viewer');
+    const scrollButton = document.getElementById('auto-scroll-button');
 
     if (sidebar.classList.contains('hidden')) {
         sidebar.classList.remove('hidden');
         cifraViewer.classList.add('hidden');
+        if (scrollButton) scrollButton.classList.add('hidden');
     } else {
         sidebar.classList.add('hidden');
         cifraViewer.classList.remove('hidden');
+        if (scrollButton) scrollButton.classList.remove('hidden');
     }
 }
 
