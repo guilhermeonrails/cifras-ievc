@@ -1255,4 +1255,28 @@ O Deus soberano na terra e Céu
     `,
     chart_image: "charts/Louve Praise.png"
   },
+  {
+    id: 31,
+    title: "Fé",
+    chord_text: '',
+    chart_image: "charts/fe-fhop.jpeg"
+  },
+  {
+    id: 32,
+    title: "Canção que não envelhece",
+    chord_text: '',
+    chart_image: "charts/cancao-nao-envelhece.jpeg"
+  },
+  {
+    id: 33,
+    title: "Sublime",
+    chord_text: '',
+    chart_image: "charts/sublime.jpeg"
+  },
+  {
+    id: 34,
+    title: "",
+    chord_text: '',
+    chart_image: "charts/cancao-nao-envelhece.jpeg"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
