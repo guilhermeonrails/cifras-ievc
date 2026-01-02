@@ -1275,8 +1275,44 @@ O Deus soberano na terra e Céu
   },
   {
     id: 34,
-    title: "",
-    chord_text: '',
-    chart_image: "charts/cancao-nao-envelhece.jpeg"
+    title: "O que tua glória fez",
+    chord_text: `
+[G]       [Em] 
+Eu me rasgo por inteiro 
+[F#m]         [Bm] 
+Faço tudo, mas vem novamente 
+[G]             [Em] 
+Eu mergulho na mirra ardente 
+[F#m]         [Bm] 
+Mas peço que Tua presença aumente 
+
+([G] [A] [F#m] [Bm]) 2X
+
+[G]                 [Em]         [A] 
+E se eu passar pelo fogo não temerei
+                [F#m]           [G]
+Na tua fumaça de glória eu entrarei
+
+[Em]                                  [A] 
+Longe do Santo dos Santos não sei mais viver
+
+[G]                 [A] 
+Quem já pisou no Santo dos Santos
+             [F#m]           [Bm]
+Em outro lugar não sabe viver
+
+          [G]              [A] 
+E onde estiver clama pela glória
+
+[D] [D]
+A glória de Deus
+
+[G] [A] [F#m] [Bm] [G] [A] [F#m] [Bm] 
+Glóóória, Glóóória, Glóóória, Glóóória 
+[G] [A] [F#m] [Bm] [G] [A] [F#m] [Bm] 
+Saaanto, Saaanto, Saaanto, Saaanto
+
+    `,
+    chart_image: "charts/quem-ja-pisou/A.png"
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
