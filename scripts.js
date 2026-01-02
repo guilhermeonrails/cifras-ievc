@@ -147,7 +147,7 @@ function loadSong(songId) {
     currentFontSize = 1.1;
 
     const song = SONGS.find(s => s.id === songId);
-    if (song && (song.chart_image || (song.charts && song.charts.length > 0)) && (!song.chord_text || song.chord_text.trim() === '')) {
+    if (song && (song.chart_image || (song.charts && song.charts.length > 0))) {
         viewMode = 'image';
     } else {
         viewMode = 'text';
