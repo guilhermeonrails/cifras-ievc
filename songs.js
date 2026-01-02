@@ -58,6 +58,7 @@ Vem, assim como estás diante do Pai
  [E]
 Vem, Vem, Vem, Vem, Vem
 `,
+    chart_image: "charts/Vem.png"
   },
   {
     id: 2,
