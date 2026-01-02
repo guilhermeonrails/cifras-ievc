@@ -57,8 +57,7 @@ Vem, assim como estás para adorar
 Vem, assim como estás diante do Pai
  [E]
 Vem, Vem, Vem, Vem, Vem
-`
-    , chart_image: "assets/chart_example.png"
+`,
   },
   {
     id: 2,
@@ -1312,7 +1311,10 @@ Glóóória, Glóóória, Glóóória, Glóóória
 [G] [A] [F#m] [Bm] [G] [A] [F#m] [Bm] 
 Saaanto, Saaanto, Saaanto, Saaanto
 
-    `,
-    chart_image: "charts/quem-ja-pisou/A.png"
+    `, chart_image: "charts/quem-ja-pisou/E.png",
+    charts: [
+      { tone: "E", image: "charts/quem-ja-pisou/E.png" },
+      { tone: "D", image: "charts/quem-ja-pisou/D.png" },
+    ]
   },
 ].sort((a, b) => a.title.localeCompare(b.title));

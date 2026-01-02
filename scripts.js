@@ -18,6 +18,7 @@ let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
 let showFavoritesOnly = false;
 let currentSearchTerm = '';
 let viewMode = 'text'; // 'text' or 'image'
+let currentChartIndex = 0;
 
 const MIN_FONT_SIZE = 0.8;
 const MAX_FONT_SIZE = 3.0;
@@ -92,8 +93,18 @@ function renderChordSheet(rawText) {
 // --- 3. CONTROLES DE INTERFACE (UI) ---
 
 function transpose(direction) {
-    transposeOffset += direction;
-    transposeOffset = (transposeOffset % 12 + 12) % 12;
+    if (viewMode === 'image') {
+        const song = SONGS.find(s => s.id === currentSongId);
+        if (song && song.charts && song.charts.length > 0) {
+            currentChartIndex += direction;
+            // Wrap around logic
+            if (currentChartIndex >= song.charts.length) currentChartIndex = 0;
+            if (currentChartIndex < 0) currentChartIndex = song.charts.length - 1;
+        }
+    } else {
+        transposeOffset += direction;
+        transposeOffset = (transposeOffset % 12 + 12) % 12;
+    }
     updateDisplay();
 }
 
@@ -132,10 +143,11 @@ function toggleViewMode(mode) {
 function loadSong(songId) {
     currentSongId = songId;
     transposeOffset = 0;
+    currentChartIndex = 0;
     currentFontSize = 1.1;
 
     const song = SONGS.find(s => s.id === songId);
-    if (song && song.chart_image && (!song.chord_text || song.chord_text.trim() === '')) {
+    if (song && (song.chart_image || (song.charts && song.charts.length > 0)) && (!song.chord_text || song.chord_text.trim() === '')) {
         viewMode = 'image';
     } else {
         viewMode = 'text';
@@ -181,7 +193,7 @@ function updateDisplay() {
         titleElement.textContent = song.title;
 
         // Handle View Toggle Visibility
-        if (song.chart_image) {
+        if (song.chart_image || (song.charts && song.charts.length > 0)) {
             viewToggle.classList.remove('hidden');
             viewToggle.classList.add('flex');
         } else {
@@ -191,10 +203,19 @@ function updateDisplay() {
         }
 
         // Handle View Mode Rendering
-        if (viewMode === 'image' && song.chart_image) {
+        if (viewMode === 'image' && (song.chart_image || (song.charts && song.charts.length > 0))) {
             displayElement.classList.add('hidden');
             chartDisplay.classList.remove('hidden');
-            chartImage.src = song.chart_image;
+
+            // Prioritize charts array if available, fallback to chart_image
+            if (song.charts && song.charts.length > 0) {
+                // Ensure index is valid
+                if (currentChartIndex >= song.charts.length || currentChartIndex < 0) currentChartIndex = 0;
+                chartImage.src = song.charts[currentChartIndex].image;
+                // Optional: Update key display if we had one for charts
+            } else {
+                chartImage.src = song.chart_image;
+            }
 
             // Update Buttons
             btnText.classList.remove('bg-indigo-600', 'text-white');
@@ -294,7 +315,7 @@ function renderSongList() {
         const iconsDiv = document.createElement('div');
         iconsDiv.className = 'flex items-center space-x-2 flex-shrink-0';
 
-        if (song.chart_image) {
+        if (song.chart_image || (song.charts && song.charts.length > 0)) {
             const chartIcon = document.createElement('span');
             chartIcon.innerHTML = '🎼'; // Icon for chart/score
             chartIcon.title = 'Possui Partitura';
