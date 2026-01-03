@@ -248,6 +248,17 @@ function updateDisplay() {
         chartDisplay.classList.add('hidden');
         viewToggle.classList.add('hidden');
     }
+
+    // Ensure auto-scroll button visibility is correct if in fullscreen
+    const header = document.querySelector('header');
+    const scrollButton = document.getElementById('auto-scroll-button');
+    if (header && header.classList.contains('hidden') && scrollButton) {
+        if (viewMode === 'image') {
+            scrollButton.classList.add('hidden');
+        } else {
+            scrollButton.classList.remove('hidden');
+        }
+    }
 }
 
 function toggleFavorite(songId, event) {
@@ -430,12 +441,23 @@ function toggleFullscreen() {
             if (btnMax) btnMax.classList.remove('hidden');
             if (btnMin) btnMin.classList.add('hidden');
             if (cifraViewer) cifraViewer.classList.remove('fullscreen-viewer');
+
+            // Re-show auto scroll button
+            const scrollButton = document.getElementById('auto-scroll-button');
+            if (scrollButton) scrollButton.classList.remove('hidden');
+
         } else {
             // Entrar no modo tela cheia
             header.classList.add('hidden');
             if (btnMax) btnMax.classList.add('hidden');
             if (btnMin) btnMin.classList.remove('hidden');
             if (cifraViewer) cifraViewer.classList.add('fullscreen-viewer');
+
+            // Hide auto scroll button ONLY if in image/chart mode
+            if (viewMode === 'image') {
+                const scrollButton = document.getElementById('auto-scroll-button');
+                if (scrollButton) scrollButton.classList.add('hidden');
+            }
         }
     }
 }
