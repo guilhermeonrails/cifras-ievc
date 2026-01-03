@@ -189,14 +189,29 @@ function updateDisplay() {
     if (song) {
         titleElement.textContent = song.title;
 
+        // Determine content availability
+        const hasText = song.chord_text && song.chord_text.trim().length > 0;
+        const hasChart = !!(song.chart_image || (song.charts && song.charts.length > 0));
+
         // Handle View Toggle Visibility
-        if (song.chart_image || (song.charts && song.charts.length > 0)) {
+        // Show toggle ONLY if BOTH text and chart are available
+        if (hasText && hasChart) {
             viewToggle.classList.remove('hidden');
             viewToggle.classList.add('flex');
         } else {
             viewToggle.classList.add('hidden');
             viewToggle.classList.remove('flex');
-            viewMode = 'text'; // Force text mode if no image
+
+            // Force view mode based on availability if toggle is hidden
+            // Note: loadSong already attempts to set viewMode, but we reinforce it here
+            // actually, we don't need to force viewMode here because the rendering logic
+            // below handles what to show. 
+            // BUT, if viewMode is 'text' and we only have chart, we should ensure chart is shown.
+            // loadSong logic currently defaults to 'image' if chart exists. 
+            // If Text exists and Chart doesn't, it defaults to 'text'.
+            // If Both exist, it defaults to 'image'. 
+            // If Only Chart exists, it defaults to 'image'.
+            // So logic in loadSong seems consistent with what we want to display.
         }
 
         // Handle View Mode Rendering
