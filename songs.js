@@ -1318,4 +1318,10 @@ Saaanto, Saaanto, Saaanto, Saaanto
       { tone: "D", image: "charts/quem-ja-pisou/D.png" },
     ]
   },
+  {
+    id: 35,
+    title: "Estamos de pé",
+    chord_text: '',
+    chart_image: "charts/Estamos-de-pe.png"
+  }
 ].sort((a, b) => a.title.localeCompare(b.title));
