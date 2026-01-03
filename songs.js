@@ -556,7 +556,8 @@ Entrego tudo a Ti
      Tua bondade me seguirá
     [A]          [D]
 Me seguirá Senhor
-`
+`,
+    chart_image: "charts/Bondade-de-Deus.png"
 
   },
   {
