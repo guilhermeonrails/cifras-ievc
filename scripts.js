@@ -6,9 +6,6 @@ const NOTES = {
     FLAT: ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B']
 };
 
-// Dados de amostra (músicas e cifras)
-
-
 // Estado Global
 let currentSongId = null;
 let transposeOffset = 0; // 0 significa tom original
@@ -393,9 +390,7 @@ function toggleAutoScroll() {
             pauseIcon.classList.add('hidden');
         }
 
-        // Atualizar estilo do botão (opcional, manter transparente)
-        button.classList.remove('bg-opacity-75');
-        button.classList.add('bg-opacity-50');
+        // Removed opacity change - keep default transparency
     } else {
         // Iniciar rolagem
         autoScrollInterval = setInterval(() => {
@@ -422,8 +417,7 @@ function toggleAutoScroll() {
             pauseIcon.classList.remove('hidden');
         }
 
-        // Atualizar estilo do botão para indicar atividade
-        button.classList.add('bg-opacity-75');
+        // Removed opacity change - keep default transparency
     }
 }
 
