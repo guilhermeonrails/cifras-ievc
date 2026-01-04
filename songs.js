@@ -1324,5 +1324,11 @@ Saaanto, Saaanto, Saaanto, Saaanto
     title: "Estamos de pé",
     chord_text: '',
     chart_image: "charts/Estamos-de-pe.png"
+  },
+  {
+    id: 36,
+    title: "Tua graça me basta",
+    chord_text: '',
+    chart_image: "charts/Tua-graca-me-basta.jpeg"
   }
 ].sort((a, b) => a.title.localeCompare(b.title));
