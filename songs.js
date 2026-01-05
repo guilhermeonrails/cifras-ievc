@@ -1330,5 +1330,15 @@ Saaanto, Saaanto, Saaanto, Saaanto
     title: "Tua graça me basta",
     chord_text: '',
     chart_image: "charts/Tua-graca-me-basta.jpeg"
+  },
+  {
+    id: 37,
+    title: "Atrai o meu coração",
+    chord_text: '',
+    chart_image: "charts/atrai-o-meu-coracao/C.png",
+    charts: [
+      { tone: "C", image: "charts/atrai-o-meu-coracao/C.png" },
+      { tone: "D", image: "charts/atrai-o-meu-coracao/D.png" },
+    ]
   }
 ].sort((a, b) => a.title.localeCompare(b.title));
