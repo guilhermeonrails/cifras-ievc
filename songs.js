@@ -1340,5 +1340,15 @@ Saaanto, Saaanto, Saaanto, Saaanto
       { tone: "C", image: "charts/atrai-o-meu-coracao/C.png" },
       { tone: "D", image: "charts/atrai-o-meu-coracao/D.png" },
     ]
+  },
+  {
+    id: 38,
+    title: "Brilharei",
+    chord_text: '',
+    chart_image: "charts/Brilharei.png",
+    charts: [
+      // { tone: "C", image: "charts/atrai-o-meu-coracao/C.png" },
+      // { tone: "D", image: "charts/atrai-o-meu-coracao/D.png" },
+    ]
   }
 ].sort((a, b) => a.title.localeCompare(b.title));
