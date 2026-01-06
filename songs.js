@@ -1355,10 +1355,11 @@ Saaanto, Saaanto, Saaanto, Saaanto
     id: 39,
     title: "Jesus te amamos",
     chord_text: '',
-    chart_image: "charts/Jesus-te-amamos.png",
+    chart_image: "charts/Jesus-te-amamos/A.png",
     charts: [
-      // { tone: "C", image: "charts/atrai-o-meu-coracao/C.png" },
-      // { tone: "D", image: "charts/atrai-o-meu-coracao/D.png" },
+      { tone: "A", image: "charts/Jesus-te-amamos/A.png" },
+      { tone: "G", image: "charts/Jesus-te-amamos/G.png" },
+      { tone: "E", image: "charts/Jesus-te-amamos/E.png" },
     ]
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
