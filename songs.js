@@ -1354,7 +1354,135 @@ Saaanto, Saaanto, Saaanto, Saaanto
   {
     id: 39,
     title: "Jesus te amamos",
-    chord_text: '',
+    chord_text: `
+         [G]      [G]
+Tudo irá passar
+            [D]
+Eterno é o Teu amor
+          [G]      [G]        [D]
+Graça constante, pedra angular
+
+           [G]      [G]
+Tudo o que morto está
+            [D]
+Vida receberá
+          [G]                   [D]
+Teu Filho traz a luz na escuridão
+
+  [A]                 [Bm]
+Pelo que fizeste, vamos adorar
+     [G]            [A]
+Esta é nossa canção
+
+          [G]
+Jesus, Te amamos
+        [D]
+Como Te amamos
+   [G]
+Te adoramos
+       [D]
+De coração
+
+          [G]
+Jesus, Te amamos
+        [D]
+Como Te amamos
+   [G]
+Te adoramos
+      [D]
+De coração
+
+      [G]
+Há esperança em Ti
+        [D]
+O órfão achou um lar
+       [G]                     [D]
+O que perdido estava, se encontrou
+
+         [G]
+Nosso sustento És
+      [D/F#]
+Força na aflição
+            [G]              [D]
+Nos transformaste, somos Filhos
+
+  [A]              [Bm]
+Pelo que fizeste, vamos adorar
+     [G]           [A]
+Esta é nossa canção
+
+          [G]
+Jesus, Te amamos
+        [D]
+Como Te amamos
+   [G]
+Te adoramos
+        [D]
+De coração
+
+          [G]
+Jesus, Te amamos
+        [D]
+Como Te amamos
+    [G]
+Te adoramos
+          [Bm] [A/C#]
+De coração
+
+[G]       [Bm] [A] [Em7]
+De coração
+[G]         [Bm] [A/C#]
+De coração
+[G]       [Bm] [A] [D]
+De coração
+
+[G]       [A]    [G]     [A]
+Nosso amor e devoção
+[D]
+Derramamos aos Teus pés
+
+[G]
+Nosso amor e devoção
+[D]
+Derramamos aos Teus pés
+
+[Em7]
+Nosso amor e devoção
+[D]                  [D/F#]
+Derramamos aos Teus pés
+
+[G]
+Nosso amor e devoção
+[A]
+Derramamos aos Teus pés
+
+[G]             [Em7]
+Jesus, Te amamos
+        [D]       [D/F#]
+Como Te amamos
+   [G]
+Te adoramos
+        [D]
+De coração
+
+          [G]
+Jesus, Te amamos
+        [D]
+Como Te amamos
+   [G]
+Te adoramos
+         [D]
+De coração
+
+          [G]
+Jesus, Te amamos
+        [D]
+Como Te amamos
+    [G]
+Te adoramos
+        [D]
+De coração
+ `,
     chart_image: "charts/Jesus-te-amamos/A.png",
     charts: [
       { tone: "A", image: "charts/Jesus-te-amamos/A.png" },
