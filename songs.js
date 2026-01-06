@@ -1350,5 +1350,15 @@ Saaanto, Saaanto, Saaanto, Saaanto
       // { tone: "C", image: "charts/atrai-o-meu-coracao/C.png" },
       // { tone: "D", image: "charts/atrai-o-meu-coracao/D.png" },
     ]
-  }
+  },
+  {
+    id: 39,
+    title: "Jesus te amamos",
+    chord_text: '',
+    chart_image: "charts/Jesus-te-amamos.png",
+    charts: [
+      // { tone: "C", image: "charts/atrai-o-meu-coracao/C.png" },
+      // { tone: "D", image: "charts/atrai-o-meu-coracao/D.png" },
+    ]
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
