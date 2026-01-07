@@ -212,7 +212,7 @@ As circunstâncias
 [F#m]    [E]             [D]
    Se comparado ao que ganhei
 
-[Pré-Refrão]
+
 [A]                 [D]
   Não sou apenas servo
       [E]          [A]
@@ -942,7 +942,7 @@ Alguns são de perto e outros de longe
  [C]               [G]        [D]
 Com licença, eu vou me apresentar
 
-[Pré-Refrão]
+
 
               [C]
 Sabe quem Eu sou?
@@ -1700,14 +1700,6 @@ Recebo dela hoje agora
              [Dm]      [G4] [G]
 Recebo dela hoje agora
 
-[Solo] [C]  [F7M]  [Am7]  [G/B]
-
-E|-----------------------------------------------------|
-B|-----------------------------------------------------|
-G|--4/5--5--5--5--4--5--5--5--4--5--5--5--4------------|
-D|-----------------------------------------------------|
-A|--2/3--3--3--3--2--3--3--3--2--3--3--3--2------------|
-E|-----------------------------------------------------|
 
  [C9]     [Am7]      [Em]                [F/G]   [G]      [C9]
 Tu me amas como sou   mas não me deixas como estou
@@ -1737,7 +1729,6 @@ Tua alegria é minha vida recebo dela hoje agora
              [Dm7]      [G4]  [G]            [Dm7]     [G]   [A4]  [A] 
 Recebo dela hoje agora    Recebo dela hoje agora aa..a
 
-Solo 2x: [D]  [G7M]  [Bm7]  [A/C#]
 
       [Em7]               [D/F#]               [G]  [A]
 Tua verdade e a luz  que me conduz para o céu
@@ -1806,7 +1797,6 @@ Alcançará de Ti Senhor
                   [Bm]      [A9]
 Misericórdia  graça e luz
 
-[Solo] [A]  [F#m7]  [F#m]  [Em]  [D9]
 
 
       [A9]
@@ -1852,9 +1842,6 @@ Alcançará de Ti Senhor
                   [Bm]   [A9]
 Misericórdia graça e luz
 
-[Solo] [A9]  [Em]  [F#m]  [G]  [D5]
-       [A9]  [Em]  [F#m]  [G]  [D5]
-       [A9]  [Em]  [F#m]  [G]  [D5]
 
  [A9]                             [C#m]
 Firme  oh! Deus está o meu coração
@@ -2164,7 +2151,6 @@ E eu Te adorarei
   [G]           [D9]  
 E eu Te adorarei  
 
-[Solo 2] [Am7]  [C9]  [G] 
 
 
 [Terceira Parte]
@@ -2174,8 +2160,6 @@ E eu Te adorarei
 [C9]                   [G]   
    Eu fico ao ouvir Teu nome
 
-[Solo 3] [Am7]  [F]  [C9]  [G] 
-         [Am7]  [F]  [C9]  [G] 
 
 
 [D9]              [Am7]
@@ -2189,8 +2173,6 @@ E eu Te adorarei
 [C9]                  [G] 
    Misteriosa água viva 
 
-[Solo 4]  [Am7]  [F]  [C9]  [G] 
-          [Am7]  [F]  [C9]  [G] 
 
 [D9]
    Santo, Santo, Santo
@@ -3059,7 +3041,7 @@ Quando tudo diz que não
                  [F]             
 Ou parece que o mar não vai se abrir
 
-[Pré-Refrão]
+
 
             [Gm]
 Sei que não estou só
@@ -3108,7 +3090,7 @@ Quando tudo diz que não
                  [F]
 Ou parece que o mar não vai se abrir
 
-[Pré-Refrão]
+
 
             [Gm]
 Sei que não estou só
@@ -3514,7 +3496,7 @@ Mas a tristeza e o desespero
                [Am7]
 Te fizeram chorar
 
-[Pré-Refrão]
+
 
                         [G/B]
 Não importa pra onde você foi
@@ -3767,7 +3749,7 @@ Em Tua presença Senhor Jesus
            [Am7]      [Em7]   [G]
 Em Tua presença Senhor Jesus
 
-[Pré-Refrão]
+
 
          [C9]    [Am7]   
 Santo Espírito
@@ -3789,8 +3771,6 @@ Em Tua presença Senhor
            [Em7]  [D]
 Em Tua presença
 
-[Solo] [C9]  [Am7]  [Em7]  [D9]
-       [C9]  [Am7]  [Em7]  [D9]
 
 [Segunda Parte]
 
@@ -3807,7 +3787,7 @@ Onde o mundo não me atraia
     [Em7]             [C9]
 Paixões não me seduzam
 
-[Pré-Refrão]
+
 
            [Am7]      [Em7]   [G]  [D]
 Em Tua presença Senhor Jesus
@@ -3839,10 +3819,6 @@ Em Tua presença Senhor
            [Em7]  [D]
 Em Tua presença
 
-[Solo 2] [C9]  [Am7]  [Em7]  [D9]
-
-
-[Pré-Refrão]
 
          [C9]    [Am7]   
 Santo Espírito
@@ -3892,7 +3868,7 @@ E a incerteza me fazer voltar
        [Bm7]    [G2]         [D9]
 A Tua mão sustenta o meu caminhar
 
-[Pré-Refrão]
+
 
         [G2]
 Ao meu lado Tu estás
@@ -3935,7 +3911,7 @@ E minhas dores sobre Si levou
         [Bm7]  [G2]      [D9]
 Maravilhoso  é o seu amor
 
-[Pré-Refrão]
+
 
         [G2]
 Ao meu lado Tu estás
@@ -4218,7 +4194,7 @@ E tudo está em Ti
                  [G/B]
 O sol a me guiar
 
-[Pré-Refrão]
+
 
 [Am7]               [D4]  [D]
     Tudo pode passar
@@ -4240,7 +4216,7 @@ E tudo está em Ti
                  [G/B]
 O sol a me guiar
 
-[Pré-Refrão]
+
 
 [Am7]               [D4]  [D]
     Tudo pode passar
@@ -4282,7 +4258,7 @@ E tudo está em Ti
                  [G/B]
 O sol a me guiar
 
-[Pré-Refrão]
+
 
 [Am7]               [D4]  [D]
     Tudo pode passar
@@ -4531,9 +4507,6 @@ Vem como em pentecostes
                [D#]  [D#4]  [D#]
 E enche-me de novo
 
-[Solo] [G#m7]  [F#6]  [E7M] 
-       [C#m7]  [D#]  [D#4]  [D#] 
-
 
 [Refrão]
 
@@ -4673,10 +4646,6 @@ Já me basta
 Pra te dizer, que a tua graça
 
 Já me basta
-
-[Solo] [C9]  [G/B]  [C9]  [G/B]
-       [C9]  [G/B]  [Am7]
-       [Em]  [D/F#]  [G]  [G/B]
 
 [Ponte]
 
@@ -4850,12 +4819,6 @@ Vem com teu rio    Senhor Jesus
      [Bm]  [G]          [A9]
 Inundar  o meu coração
 
-( [Bm]  [G]  [D]  [A9] )
-( [Bm]  [G]  [D]  [A9] )
-
-[Solo] [Bm]  [G]  [D]  [A9] 
-       [Bm]  [G]  [D]  [A9] 
-       [G]  [A9]  [Bm]
 
         [C#m]  [A]     [E]     [B9]
 Faz chover,    Senhor Jesus
@@ -4901,7 +4864,7 @@ Ressuscitado, glorificado
      [A]               
 O inferno e a morte venceu
 
-[Pré-Refrão]
+
 
     [E]                    [B9]
 E agora que dizem que Tu és
@@ -4948,7 +4911,7 @@ Ressuscitado, glorificado
      [A]                 
 O inferno e a morte venceu
 
-[Pré-Refrão]
+
 
     [E]                    [B9]
 E agora que dizem que Tu és
@@ -5009,7 +4972,7 @@ Não quero mais o meu querer
           [Em]              [Bm7]
 Não vou sair daqui até tocar você
 
-[Pré-Refrão]
+
 
       [C]                        [D]
 Não quero só me arrepiar não quero só me emocionar
@@ -5045,7 +5008,7 @@ Não quero mais o meu querer
           [Em]              [Bm7]
 Não vou sair daqui até tocar você
 
-[Pré-Refrão]
+
 
       [C]                        [D]
 Não quero só me arrepiar não quero só me emocionar
@@ -5088,7 +5051,7 @@ Furioso oceano vem fluir dentro de mim
 ( [C]  [D]  [Em]  [Bm7] )
 ( [C]  [D]  [Em]  [Bm7] )
 
-[Pré-Refrão]
+
 
       [C]                        [D]
 Não quero só me arrepiar não quero só me emocionar
@@ -5158,7 +5121,7 @@ Eu me rendo
        [G4]
 Eu me rendo
 
-[Pré-Refrão]
+
 
  [Am]
 Deus Emanuel
@@ -5188,7 +5151,6 @@ Galileu, Jesus, Jesus
  [Dm7] [F7M]    [C]      [G4]
 Galileu, Jesus, Jesus
 
-[Solo] [Am]  [F7M]  [Am]  [F7M]
 
        [Dm7]           [F7M]
 Eu me rendo ao seu amor
@@ -5199,7 +5161,7 @@ Eu me rendo ao seu amor
        [Am]                  [G4]
 Eu me rendo, me rendo, me rendo, oh
 
-[Pré-Refrão]
+
 
  [Am]
 Deus Emanuel
@@ -5484,7 +5446,7 @@ Esse lugar é no Senhor
                     [G]
 Esse lugar é no Senhor
 
-[Solo] [C9]  [G]  [C9]  [G]
+
 
     [C9]
 És tudo o que eu preciso, Jesus!
@@ -6095,8 +6057,6 @@ Aos Teus pés, me rendo
              [Dm7(9)]      [Am]  [G4(6)]
 Pois a Tua glória quero ver
 
-[Solo] [F7M(9)]  [Dm7(9)]  [Am]  [Em7]
-       [F7M(9)]  [Dm7(9)]  [Am]  [G4(6)]
 
 [Primeira Parte]
 
@@ -6190,8 +6150,6 @@ Aos Teus pés, me rendo
              [Dm7(9)]      [Am]  [G4(6)]
 Pois a Tua glória quero ver
 
-[Solo] [F7M(9)]  [Dm7(9)]  [Am]  [Em7]
-       [F7M(9)]  [Dm7(9)]  [Am]  [G4(6)]  [F7M(9)]
 `,
 
   },
@@ -6373,8 +6331,6 @@ Um dia com Tua glória
       [C7M]   [C7M(5-)]  [C7M]
 Vale mais que       mil
 
-[Solo 1] [D9(11)]  [Bm7(11)]  [C7M]
-
 
 [Primeira Parte]
 
@@ -6432,8 +6388,6 @@ Um dia com Tua glória
       [C7M]   [C7M(5-)]  [C7M]
 Vale mais que       mil
  
-[Solo 2] [D9(11)]  [Bm7(11)]  [C7M]
-
 [Ponte 1]
 
 ( [D9(11)]  [Em]  [G7M] )
@@ -6530,7 +6484,7 @@ Meu clamor Tu escutas
    [Em]               [C]
 E fazes cair as barreiras em mim
 
-[Pré-Refrão]
+
 
      [G]              [D/F#]
 És fiel, Senhor, e dizes
@@ -7457,8 +7411,6 @@ Mas até este dia chegar
 [Am]                      [Dm]
    Mas peço que Tua presença aumente
 
-[Solo] [Bb]  [Gm7]  [Dm]  [Am]
-       [Bb]  [Gm7]  [Dm]  [Am]
 
 
 [Bb]             [Gm7]
@@ -7470,7 +7422,7 @@ Mas até este dia chegar
 [Am]                      [Dm]
    Mas peço que Tua presença aumente
 
-[Pré-Refrão]
+
 
 [Bb]                      [Gm7]          [C]
    E se eu passar pelo fogo não temerei
@@ -7576,7 +7528,7 @@ Lembro que estás logo ali
      [B9]                 [F#/A#]  [Bm9]
 Na proa do meu barco a dor____mir
 
-[Pré-Refrão]
+
 
             [G#m7]
 Eu sei que não estou só
@@ -7607,7 +7559,7 @@ Sim, eu posso clamar
  [B]       [B/C#]      [F#]  [B/F#]
 Mestre, vem me ajudar
 
-[Pré-Refrão]
+
 
             [G#m7]
 Eu sei que não estou só
@@ -9167,17 +9119,6 @@ Lava-me e refrigera a minh'alma
       [Bm7]     [G]
 Restitui
 
-[Solo]
-
-E|---------------------------------------------------------------------------------------|
-B|------------------------------------------------------------------------7-5------------|
-G|--7-6-4--4-6/7--7-7-7-7-6-4-0-7-6-4-4-6/7-7-7-7-7-6-4-0-7-6-7-7-7-7-7-7-----7-6--0-2-4-|
-D|---------------------------------------------------------------------------------------|
-A|---------------------------------------------------------------------------------------|
-E|---------------------------------------------------------------------------------------|
-
-( [B]  [C#]  [D]  [A] )
-
             [Em7]
 E o tempo que roubado foi
 [A]
@@ -9383,7 +9324,7 @@ Não há outro nome
                     [G]      [D2]
 Comparado ao grande Eu Sou
 
-[Pré-Refrão]
+
 
 [Am7]                [C9]
     E mesmo sendo pó
@@ -9411,7 +9352,7 @@ Todo ser confessará
            [D2]
 Teu santo nome
 
-[Pré-Refrão]
+
 
 [Am7]                [C9]
     E mesmo sendo pó
@@ -9538,7 +9479,7 @@ Ou esperar algo acontecer
                    [C9]        [Em7]     [D]
 Mesmo que eu me encontre em meio ao caos
 
-[Pré-Refrão]
+
 
             [C9]        [Em7]       [G]   [D]
 Eu sei que tudo continua sendo dEle
@@ -9567,7 +9508,7 @@ Ou esperar algo acontecer
                    [C9]        [Em7]     [D]
 Mesmo que eu me encontre em meio ao caos
 
-[Pré-Refrão]
+
 
             [C9]        [Em7]       [G]   [D]
 Eu sei que tudo continua sendo dEle
@@ -9746,7 +9687,7 @@ Tudo aquilo que sonhei para ti
        [F#m7(11)]
 Filho meu
 
-[Pré-Refrão]
+
 
 [F#m7(11)]                      [E]          
          O que minhas mãos fizeram 
@@ -9799,7 +9740,7 @@ Tudo aquilo que sonhei para ti
        [F#m7(11)]
 Filho meu
 
-[Pré-Refrão]
+
 
 [F#m7(11)]                      [E]          
          O que minhas mãos fizeram 
@@ -10076,7 +10017,7 @@ Cairá sobre mim
             [C]
 Então eu direi
 
-[Pré-Refrão]
+
 
             [G]      [D]
 Então eu direi, oh oh
@@ -10133,7 +10074,7 @@ Na presença do rei
              [D]  [Bm]  [Em] 
              [F]  [D]
 
-[Pré-Refrão]
+
 
             [G]      [D]
 Então eu direi, oh oh
@@ -10174,7 +10115,7 @@ Na presença do rei
             [C]
 Então eu direi
 
-[Pré-Refrão]
+
 
             [G]        [D]
 Então eu direi, oh oh
@@ -10410,8 +10351,6 @@ Poderoso és
       [G#m7]
 Grandioso és
 
-[Solo] [A2]  [B4]  [C#m7]  [G#m7]
-       [A2]  [B4]  [C#m7]  [B4]
 
 [Refrão Final] 
 
