@@ -10373,4 +10373,10 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/Deus é o meu refúgio.png"
   },
+  {
+    id: 1088,
+    title: "Exaltado",
+    chord_text: "",
+    chart_image: "charts/Exaltado.png"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
