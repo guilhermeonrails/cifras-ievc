@@ -10391,4 +10391,14 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/Deus do avivamento.png"
   },
+  {
+    id: 1091,
+    title: "Escape",
+    chord_text: "",
+    chart_image: "charts/escape/G.png",
+    charts: [
+      { tone: "G", image: "charts/escape/G.png" },
+      { tone: "B", image: "charts/escape/B.png" },
+    ]
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
