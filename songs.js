@@ -10385,4 +10385,10 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/Maravilhosa graça.png"
   },
+  {
+    id: 1090,
+    title: "Deus do avivamento",
+    chord_text: "",
+    chart_image: "charts/Deus do avivamento.png"
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
