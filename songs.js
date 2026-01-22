@@ -8047,6 +8047,7 @@ O Que fazer quando Ele vem aqui?
    Mais que ser bem-vindo
                         [G]     [D]  [C9]
 Nós Te desejamos outra vez aqui`,
+    chart_image: "charts/Quando ele vem.png",
 
   },
   {
