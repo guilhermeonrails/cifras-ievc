@@ -6155,6 +6155,7 @@ Aos Teus pés, me rendo
 Pois a Tua glória quero ver
 
 `,
+    chart_image: "charts/Lugar secreto.png",
 
   },
   {
