@@ -2218,7 +2218,7 @@ E eu Te adorarei
    És tudo para mim
   [G]           [D9]      
 E eu Te adorarei`,
-
+    chart_image: "charts/cancao-apocalipse.png",
   },
   {
     id: 1008,
@@ -4293,7 +4293,11 @@ Onde encontro meu refúgio
 Jesus,         eis-me aqui!
    [Em7(9)]  [D]           [C9]
 Jesus,       eis-me aqui!`,
-
+    chart_image: "charts/a ti eu vou clamar/D.png",
+    charts: [
+      { tone: "D", image: "charts/a ti eu vou clamar/D.png" },
+      { tone: "C", image: "charts/a ti eu vou clamar/C.png" },
+    ]
   },
   {
     id: 1028,
