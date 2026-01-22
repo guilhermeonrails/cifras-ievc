@@ -10406,4 +10406,10 @@ Teu nome imutável é`,
       { tone: "B", image: "charts/escape/B.png" },
     ]
   },
+  {
+    id: 1092,
+    title: "Escudo",
+    chord_text: "",
+    chart_image: "charts/Escudo.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
