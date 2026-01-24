@@ -2406,6 +2406,7 @@ Chove na vida do meu irmão
 
 Final: [A]  [Bb]  [C]  [D]  [E]  [F]  [G]  [A]
         [Bb]  [A]  [G]  [F]`,
+    chart_image: "charts/Chuva de poder.png",
 
   },
   {
