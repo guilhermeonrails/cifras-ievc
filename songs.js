@@ -10419,4 +10419,10 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/Te esperamos.png",
   },
+  {
+    id: 1094,
+    title: "Senhor tu es bom",
+    chord_text: "",
+    chart_image: "charts/Senhor tu es bom.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
