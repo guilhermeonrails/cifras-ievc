@@ -10437,6 +10437,11 @@ Teu nome imutável é`,
     id: 1096,
     title: "Primeira essência",
     chord_text: "",
-    chart_image: "charts/primeira-essencia.png",
+    chart_image: "charts/primeira-essencia/F.png",
+    charts: [
+      { tone: "G", image: "charts/primeira-essencia/G.png" },
+      { tone: "D", image: "charts/primeira-essencia/D.png" },
+      { tone: "F", image: "charts/primeira-essencia/F.png" },
+    ]
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
