@@ -10433,4 +10433,10 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/sinto-fluir.png",
   },
+  {
+    id: 1096,
+    title: "Primeira essência",
+    chord_text: "",
+    chart_image: "charts/primeira-essencia.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
