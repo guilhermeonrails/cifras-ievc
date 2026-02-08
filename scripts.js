@@ -489,7 +489,67 @@ window.onload = () => {
     } else {
         updateDisplay();
     }
+
+    const viewer = document.getElementById('cifra-viewer'); // Or a specialized container if needed
+
+    if (viewer) {
+        viewer.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        viewer.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+    }
 };
+
+// --- Swipe Navigation Logic ---
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleSwipe() {
+    const header = document.querySelector('header');
+    const isFullscreen = header && header.classList.contains('hidden');
+
+    // Only trigger if in Fullscreen AND Image/Chart Mode
+    if (!isFullscreen || viewMode !== 'image') {
+        return;
+    }
+
+    const SWIPE_THRESHOLD = 50; // Minimum distance to consider a swipe
+
+    // Right to Left Swipe (Next Song)
+    // StartX > EndX
+    if (touchStartX - touchEndX > SWIPE_THRESHOLD) {
+        loadNextFavorite();
+    }
+}
+
+function loadNextFavorite() {
+    // 1. Get List of Favorites (Sorted as in SONGS)
+    const favoriteSongs = SONGS.filter(song => favorites.has(song.id));
+
+    if (favoriteSongs.length === 0) return; // No favorites
+
+    // 2. Find Current Song Index in Favorites
+    const currentIndex = favoriteSongs.findIndex(song => song.id === currentSongId);
+
+    let nextIndex = 0;
+    if (currentIndex !== -1) {
+        // Found current song in favorites, go to next
+        nextIndex = (currentIndex + 1) % favoriteSongs.length;
+    } else {
+        // Current song is not in favorites, go to first favorite
+        nextIndex = 0;
+    }
+
+    // 3. Load Next Song
+    const nextSong = favoriteSongs[nextIndex];
+    if (nextSong) {
+        loadSong(nextSong.id);
+    }
+}
 
 window.transpose = transpose;
 window.toggleColumns = toggleColumns;
