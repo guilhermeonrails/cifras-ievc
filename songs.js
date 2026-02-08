@@ -4779,6 +4779,7 @@ O meu coração não pode mais viver sem
 O Teu grande amor
 [C]   [Em]  [D]
 Meu anseio   és tu Jesus`,
+    chart_image: "charts/eu-te-quero.png",
 
   },
   {
@@ -10422,8 +10423,14 @@ Teu nome imutável é`,
   },
   {
     id: 1094,
-    title: "Senhor Tu es bom",
+    title: "Fala - Morada",
     chord_text: "",
-    chart_image: "charts/Senhor tu es bom.png",
+    chart_image: "charts/fala-morada.png",
+  },
+  {
+    id: 1095,
+    title: "Sinto fluir",
+    chord_text: "",
+    chart_image: "charts/sinto-fluir.png",
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
