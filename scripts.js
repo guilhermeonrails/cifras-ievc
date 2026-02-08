@@ -12,6 +12,7 @@ let transposeOffset = 0; // 0 significa tom original
 let isTwoColumns = false;
 let currentFontSize = 1.1; // Tamanho inicial em rem
 let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+let favoriteSettings = JSON.parse(localStorage.getItem('favoriteSettings') || '{}');
 let showFavoritesOnly = false;
 let currentSearchTerm = '';
 let viewMode = 'text'; // 'text' or 'image'
@@ -97,6 +98,12 @@ function transpose(direction) {
             // Wrap around logic
             if (currentChartIndex >= song.charts.length) currentChartIndex = 0;
             if (currentChartIndex < 0) currentChartIndex = song.charts.length - 1;
+
+            // Persist setting if favorited
+            if (favorites.has(currentSongId)) {
+                favoriteSettings[currentSongId] = { chartIndex: currentChartIndex };
+                localStorage.setItem('favoriteSettings', JSON.stringify(favoriteSettings));
+            }
         }
     } else {
         transposeOffset += direction;
@@ -142,6 +149,13 @@ function loadSong(songId) {
     transposeOffset = 0;
     currentChartIndex = 0;
     currentFontSize = 1.1;
+
+    // Restore chart index if favorited and saved
+    if (favorites.has(songId) && favoriteSettings[songId]) {
+        if (typeof favoriteSettings[songId].chartIndex === 'number') {
+            currentChartIndex = favoriteSettings[songId].chartIndex;
+        }
+    }
 
     const song = SONGS.find(s => s.id === songId);
     if (song && (song.chart_image || (song.charts && song.charts.length > 0))) {
@@ -280,6 +294,11 @@ function toggleFavorite(songId, event) {
 
     if (favorites.has(songId)) {
         favorites.delete(songId);
+        // Clean up settings when unfavoriting
+        if (favoriteSettings[songId]) {
+            delete favoriteSettings[songId];
+            localStorage.setItem('favoriteSettings', JSON.stringify(favoriteSettings));
+        }
     } else {
         favorites.add(songId);
     }
