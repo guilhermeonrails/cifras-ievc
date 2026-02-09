@@ -270,6 +270,7 @@ function updateDisplay() {
                 chartImage.src = song.chart_image;
             }
 
+
             // Update Buttons
             btnText.classList.remove('bg-indigo-600', 'text-white');
             btnText.classList.add('bg-gray-300', 'text-gray-700');
@@ -279,6 +280,10 @@ function updateDisplay() {
             // Hide columns toggle
             const columnsToggle = document.getElementById('columns-toggle');
             if (columnsToggle) columnsToggle.classList.add('hidden');
+
+            // Hide font controls
+            const fontControls = document.getElementById('font-controls');
+            if (fontControls) fontControls.classList.add('hidden');
         } else {
             displayElement.classList.remove('hidden');
             chartDisplay.classList.add('hidden');
@@ -293,6 +298,10 @@ function updateDisplay() {
             // Show columns toggle
             const columnsToggle = document.getElementById('columns-toggle');
             if (columnsToggle) columnsToggle.classList.remove('hidden');
+
+            // Show font controls
+            const fontControls = document.getElementById('font-controls');
+            if (fontControls) fontControls.classList.remove('hidden');
         }
 
     } else {
