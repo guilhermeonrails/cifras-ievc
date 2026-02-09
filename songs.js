@@ -9103,61 +9103,13 @@ Para mim
   {
     id: 1074,
     title: "Sonda-me",
-    chord_text: `
-
-[Bm7]                   [G]
-Os planos que foram embora
-                  [Bm7]
-O sonho que se perdeu
-                    [G]
-O que era festa e agora
-          [D/F#]      [Em7]
-É luto do que já morreu
-                            [F#m7(9)]
-Não podes pensar que este é o teu fim
-                       [G]
-Não é o que Deus planejou
-  [D/F#]         [Em7]
-Levante-se do chão
-            [A]
-Erga um clamor
-
-[A4]  [A] [G]                              [Em7]
-Restitui! Eu quero de volta o que é meu
-[A4] [A] [G]                             [Em7]  [A]
-Sara-me! E põe teu azeite em minha dor
-      [G]                            [A] [A4] [A]
-Restitui! E leva-me às águas tranqüilas
-     [G]  [Em7]                [A4]    [A]
-Lava-me e refrigera a minh'alma
-      [Bm7]     [G]
-Restitui
-
-            [Em7]
-E o tempo que roubado foi
-[A]
-Não poderá se comparar
-[Em7]
-A tudo aquilo que o Senhor
-[A]
-Tem preparado ao que clamar
-[Em7]              [D/F#]
-Creia porque o poder de um clamor
-      [G]      [A4]
-Pode ressuscitar
-
-[A4]  [A] [G]                              [Em7]
-Restitui! Eu quero de volta o que é meu
-[A4] [A] [G]                             [Em7]  [A]
-Sara-me! E põe teu azeite em minha dor
-      [G]                            [A] [A4] [A]
-Restitui! E leva-me às águas tranqüilas
-     [G]  [Em7]                [A4]    [A]
-Lava-me e refrigera a minh'alma
-      [Bm7]     
-Restitui
-
-[Final] [G]  [Bm7]  [G]`,
+    chord_text: '',
+    chart_image: "charts/Sonda-me/G.png",
+    charts: [
+      { tone: "G", image: "charts/Sonda-me/G.png" },
+      { tone: "D", image: "charts/Sonda-me/A.png" },
+      { tone: "F", image: "charts/Sonda-me/C.png" },
+    ]
 
   },
   {
