@@ -4137,55 +4137,9 @@ Derrama a Shekinah`,
   {
     id: 1026,
     title: "Estás comigo",
-    chord_text: `Intro: [Bb]  [F/A]  [Gm] [Eb9]
-
- [Bb]    [F/A]     [F#º]  [Gm]           [A#/D]
-Fiel, constante,   tão cheio de amor
- [Eb9]
-Tão poderoso meu senhor,
- [Bb]            [F/A]   [F#º]
-Me abraça, me sondas
- [Gm]          [A#/D]
-Conheces meu andar
-[Eb]
-E gostas de me ouvir cantar
-[Bb]                        [F/A]                [F#º]
-Eu sei que estás comigo, eu sei que estás comigo
-[Gm]                 [A#/D]     [Eb]
-Eu sei que não me deixas sozinha em minhas lutas
-[Bb]                       [F/A]          [F#º]     [Gm]   [A#/D]
-Eu sei que vens agora para gravar em meu coração
-  [Eb]
-Que Tu és, és minha salvação
-
-( [Bb]  [F/A]  [Gm]  [Eb] )
-
-  [Bb]       [F/A]          [Gm]         [Eb]
-Gracioso, bondoso, misericordioso, Tu és maravilhoso
- [Bb]         [F/A]
-Me abraça, me sondas
- [Gm]
-Conheces meu andar
-[Eb]
-E gostas de me ouvir cantar
-
-[Bb]                        [F/A]
-Eu sei que estás comigo, eu sei que estás comigo
-[Gm]                        [Eb]
-Eu sei que não me deixas sozinha em minhas lutas
-[Bb]                     [F/A]                [Gm]
-Eu sei que vens agora para gravar em meu coração
-  [Eb]
-Que Tu és
-[Bb]                        [F/A]
-Eu sei que estás comigo, eu sei que estás comigo
-[Gm]                        [Eb]
-Eu sei que não me deixas sozinha em minhas lutas
-[Bb]                     [F/A]                [Gm]
-Eu sei que vens agora para gravar em meu coração
-  [Eb]                         [Bb]
-Que Tu és, és minha salvação`,
-
+    chord_text: '',
+    chart_image: "charts/Estas comigo.png",
+    charts: []
   },
   {
     id: 1027,
@@ -10407,5 +10361,11 @@ Teu nome imutável é`,
     title: "Canção de Simeão",
     chord_text: "",
     chart_image: "charts/cancao de simeao.png",
+  },
+  {
+    id: 1097,
+    title: "Leva-me além",
+    chord_text: "",
+    chart_image: "charts/Leva-me além.png",
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
