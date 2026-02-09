@@ -14,7 +14,7 @@ Vem, assim como estás diante do Pai
  [D]
 Vem
 
-[Refrão]
+
 
  [G]                   [D]
 Toda língua confessará o Senhor
@@ -69,7 +69,7 @@ Sopraste Tua vida em mim
         [A]
 Tão bom    pra mim
 
-[Refrão]
+
 
        [C#m]          [B4]
 Oh, impressionante, infinito
@@ -109,7 +109,7 @@ Mas tudo pagou por mim
         [A]
 Tão bom    pra mim
 
-[Refrão]
+
 (Já apresentado acima)
 
 ( [C#m]  [B4]  [A]  [E] )
@@ -277,7 +277,7 @@ Oh eu sou Teu
            [A]           [D]
 Oh eu sou Teu   oh eu sou Teu
 
-[Refrão]
+
 
  [D]
 Santo
@@ -316,7 +316,7 @@ Oh eu sou Teu
            [A]           [D]
 Oh eu sou Teu   oh eu sou Teu
 
-[Refrão]
+
 
  [D]
 Santo
@@ -380,7 +380,7 @@ Eu vou confiar somente em Ti
             [A]
 Não vou ser abalado
 
-[Refrão]
+
 
  [D]
 Santo
@@ -416,7 +416,7 @@ A verdadeira paz só tem aquele
 Que já conhece a Jesus
 
 
-[Refrão]
+
 [C]                   [C] 
 O sentimento mais precioso
      [F]               [Fm]
@@ -455,7 +455,7 @@ Que conceda   Sua graça
    [D]       [G]
 E te dê a paz
 
-[Refrão]
+
 [Em]  [C]     [G]     [D4]
 Am__ém, amém, amém
 [Em]  [C]     [G]     [D4]
@@ -501,7 +501,7 @@ Até eu me deitar
          [G]         [A]       [D]
 Eu cantarei da bondade de Deus
 
-[Refrão]
+
 [G]                  [D]
   És fiel em todo tempo
 [G]                      [D]        [A]
@@ -559,7 +559,7 @@ Abra os olhos do meu coração
           [C#m]  [A]            [E]
 Quero Te ver,       quero Te ver,   Senhor
 
-[Refrão]
+
 
      [B]          [C#m]
 Exaltando e bem alto
@@ -623,7 +623,7 @@ Poderoso é o Senhor nosso Deus
 [C]   [F]  
 Ale-lu-ia 
 
-[Refrão]
+
 [C]   [C]
 San-n-to, Santo
       [C]             [G]
@@ -669,7 +669,7 @@ E este rio está
  [A]          [G/B]  [A]
 Neste lugar
 
-[Refrão] 
+ 
 
   [D]                 [G]       [D]  
 Quero beber do Teu rio, Senhor
@@ -728,7 +728,7 @@ Nos dias de tribulação
       [Bm7]         [D]
 Eu encontro salvação
 
-[Refrão]
+
 
  [A]                   
 Ainda que a figueira 
@@ -845,7 +845,7 @@ Soberano e Fiel
 Não há outro como Tu
        [A]               [B]
 Reinas sobre a Terra e céus
-[Refrão]
+
 
      [E]
 És o Alfa e Ômega, Início e Fim
@@ -889,7 +889,7 @@ E no chão, abandonado
 O seu tronco morrer
 [Fm]                 [C]
 Há esperança pra você
-[Refrão]
+
     [C]         [F]      [G]   [Am]
 Ao cheiro das águas brotará
 [C]           [F]    [G]       [Em] 
@@ -908,7 +908,7 @@ Não cessarão os seus frutos e viverá
 [Bm] | [D] | [A] | [G] |
 
 
-[Refrão]
+
 | [G]   [D] | [A]       | [G] |
    / /  / /   / /  / / 
 
@@ -965,7 +965,7 @@ Eu sou a luz no fim do túnel
    [D]                 [G]
 A força quando a sua acabar
 
-[Refrão]
+
 
 [G]          [C]
 E se precisar
@@ -997,7 +997,7 @@ Eu quero um relacionamento
  [Em]               [D]
 Com profundidade na intimidade
 
-[Refrão] (Repete)
+ (Repete)
 
 [G]          [C9]
 E se precisar
@@ -1097,7 +1097,7 @@ Enche-nos outra vez
 [Am]       [G/B]      [D/F#]
 Enche-nos outra vez
 
-[Refrão]
+
          [G]
 Fogo de deus
          [D/F#]
@@ -1157,7 +1157,7 @@ Enquanto eu viver
  [D]
 Minh'alma irá cantar
 
-[Refrão]
+
 
  [F#m]  [D]        [A]
 Lou__ve ao Senhor
@@ -1193,7 +1193,7 @@ Enquanto eu viver
  [D]
 Minh'alma irá cantar
 
-[Refrão]
+
 
 [Ponte]
 
@@ -1598,7 +1598,7 @@ E este rio está
  [A4]      [A]  [G/B]  [A/C#]
 Neste lugar
 
-[Refrão] 
+ 
 
   [D]                 [G]       [D]  [D/F#]
 Quero beber do Teu rio, Senhor
@@ -1637,7 +1637,7 @@ E este rio está
  [A4]      [A]  [G/B]  [A/C#]
 Neste lugar
 
-[Refrão] 
+ 
 
   [D]                 [G]       [D]  [D/F#]
 Quero beber do Teu rio, Senhor
@@ -1690,7 +1690,7 @@ Tua verdade e a luz  que me conduz para o céu
       [Dm7]                   [C/E]            [F] [G]
 Tua palavra e o remédio que cura todo meu ser
 
-[Refrão]
+
          [F]           [C/E]          [Dm7]              [G4] [G] 
 Tua alegria em minha vida me fortalece a cada novo dia
          [F]          [C/E]              [Dm7]      [G4] [G]
@@ -1716,7 +1716,7 @@ Tua verdade e a luz  que me conduz para o céu
       [Dm7]                   [C/E]            [F] [G]
 Tua palavra e o remédio que cura todo meu ser
 
-[Refrão]
+
          [F]           [C/E]          [Dm7]              [G4]  [G] 
 Tua alegria em minha vida me fortalece a cada novo dia
          [F]          [C/E]              [Dm7]      [G4] [G]
@@ -1735,7 +1735,7 @@ Tua verdade e a luz  que me conduz para o céu
       [Em7]                   [D/F#]              [A]
 Tua palavra e o remédio que cura todo meu ser
 
-[Refrão]
+
          [G]           [D/F#]         [Em7]              [A4]  [A] 
 Tua alegria em minha vida me fortalece a cada novo dia
          [G]          [D/F#]              [Em7]     [A4] [A]
@@ -1904,7 +1904,7 @@ Meu desejo é sentir
        [G]          [D4]
 Teu poder, Teu poder
 
-[Refrão] 
+ 
 
        [C9]           [Em7]
 Então vem me incendiar
@@ -1941,7 +1941,7 @@ Meu desejo é sentir
        [G]          [D4]
 Teu poder, Teu poder
 
-[Refrão] 
+ 
 
        [C9]           [Em7]
 Então vem me incendiar
@@ -1992,7 +1992,7 @@ Teu é o poder
               [D4]
 Pra sempre, amém
 
-[Refrão] 
+ 
 
        [C9]           [Em7]
 Então vem me incendiar
@@ -2103,7 +2103,7 @@ Digno é o Cordeiro     que foi morto
 [C9]                   [G]
    Sobre o trono do céu
 
-[Refrão]
+
 
 [D9]
    Santo, Santo, Santo
@@ -2134,7 +2134,7 @@ E eu Te adorarei
 [C9]                     [G]
    Ao único Rei eternamente
 
-[Refrão]
+
 
 [D9]
    Santo, Santo, Santo
@@ -2249,7 +2249,7 @@ Santo,  santo, santo
     [Am]      [C]       [Em] [D]
 Santo,  santo, santo
 
-[Refrão]
+
 
  [Em]             [D]
 Vem com fogo e glória oh Deus
@@ -2280,7 +2280,7 @@ Chove na vida do meu irmão
 
 ([E]  [A/E] 2x)
 
-[Refrão]
+
   [E]             [E/G#]
 Chove, chove chuva
   [A]         [B]
@@ -2321,7 +2321,7 @@ Com Tuas águas vem regar
        [A9]           [B9]
 Minha vida, meu jardim
 
-[Refrão]
+
  [E]             [E/G#]
 Chove, chove chuva
   [A]         [B]
@@ -2369,7 +2369,7 @@ Chove aqui na minha vida (yeah, na minha vida)
                ( [C] [A] [G] )
 Chove que eu quero ver (na minha igreja)
 
-[Refrão]
+
   [F]
 Chove, chove chuva
   [Bb/F]
@@ -2472,7 +2472,7 @@ Teu amor não me condenou me
       [B9]
 Conquistou
 
-[Refrão]
+
 
               [A]                    [C#m]
 Eu pertenço a ti, teu sangue me comprou
@@ -2509,7 +2509,7 @@ Teu olhar me capturou
 Jesus,     Jesus
 
 
-[Refrão]
+
 
               [A]
 Eu pertenço a ti, teu sangue me
@@ -2573,7 +2573,7 @@ Confio        em   Ti
     [F#m7(11)]  [A9]  [B4]
 Confio        em Ti
 
-[Refrão]
+
 
 [E]
   Creio que Tu és a cura
@@ -2601,7 +2601,7 @@ Confio        em   Ti
     [F#m7(11)]  [A9]  [B4]
 Confio        em Ti
 
-[Refrão]
+
 
 [E]
   Creio que Tu és a cura
@@ -2636,7 +2636,7 @@ Nada é impossível para  Ti
      [C#m]                  [B]
 Tens o meu mundo em tuas mãos
 
-[Refrão]
+
 
 [E]
   Creio que Tu és a cura
@@ -2768,7 +2768,7 @@ Cobre - me com Tuas   mãos
 [C]   [C/E] [F2]      [F/A]      [D/F#]    [G4]  [G]
 Com po__der vem me esconder, Senhor
 
-[Refrão]
+
 
 [C/E]             [F]         [G4] [G]   [C4]  [C]
 Se o trovão e o mar se erguendo vêm
@@ -2786,7 +2786,7 @@ Minh'alma está segura em ti
 [C] [C/E]  [F2]        [F/A]     [D/F#]    [G4]  [G]
 Sabes bem que em Cristo firme estou
 
-[Refrão]
+
 
 [C/E]             [F]         [G4] [G]   [C4]  [C]
 Se o trovão e o mar se erguendo vêm
@@ -2815,7 +2815,7 @@ Minh'alma está segura em Ti
 [C] [C/E] [F2]           [F/A]     [D/F#]    [G4]  [G]
 Sabes   bem que em Cristo firme estou
 
-[Refrão]
+
 
 [C/E]             [F]         [G4] [G]   [C4]  [C]
 Se o trovão e o mar se erguendo vêm
@@ -2924,7 +2924,7 @@ Meu Senhor, Tu és a minha alegria
        [Bb9(11+)]
 Eu preciso 
 
-[Refrão]
+
 
                [Bb9(11+)]
 Deus da minha vida
@@ -2971,7 +2971,7 @@ Meu Senhor, Tu és a minha alegria
        [Bb9(11+)]
 Eu preciso 
 
-[Refrão]
+
 
                [Bb9(11+)]
 Deus da minha vida
@@ -3011,7 +3011,7 @@ Eu preciso do Senhor
 ( [Bb9(11+)]  [C9]  [Dm7] )
 ( [Bb9(11+)]  [C9]  [Dm7]  [Bb9(11+)] )
   
-[Refrão]
+
 
                [Bb9(11+)]
 Deus da minha vida
@@ -3055,7 +3055,7 @@ Venha em meu favor
    [Bb9]                  [C]
 E cumpra em mim teu querer
 
-[Refrão]
+
 
                 [F]
 O Deus do impossível
@@ -3104,7 +3104,7 @@ Venha em meu favor
    [Bb9]                  [C]
 E cumpra em mim teu querer
 
-[Refrão]
+
 
                 [F]
 O Deus do impossível
@@ -3170,7 +3170,7 @@ os Teus propósitos pra mim
          [B]   [D#m]           [C#]
 Tu és o Deus     da minha vida
 
-[Refrão]
+
 
       [F#]   [C#/F]      [D#m]  [C#]
 Deus faz além, Deus faz além
@@ -3198,7 +3198,7 @@ os Teus propósitos pra mim
          [B]   [D#m]           [C#]
 Tu és o Deus     da minha vida
 
-[Refrão]
+
 
       [F#]   [C#/F]      [D#m]  [C#]
 Deus faz além, Deus faz além
@@ -3231,7 +3231,7 @@ Eis-me aqui, Senhor
        [C#/F]   [F#]   [B]            [C#]       
 Faz o teu querer, faz o teu querer
 
-[Refrão]
+
 
       [F#]   [C#/F]      [D#m]  [C#]
 Deus faz além, Deus faz além
@@ -3296,7 +3296,7 @@ E o meu Deus não falha não
 
 Não falha não
 
-[Refrão]
+
 
 [Dm7]                       
     Não vivo pela vista não
@@ -3335,7 +3335,7 @@ E o meu Deus não falha não
 
 Não falha não
 
-[Refrão]
+
 
 [Dm7]                       
     Não vivo pela vista não
@@ -3508,7 +3508,7 @@ Ele apaga o seu passado
                     [G]
 E não desiste de você
 
-[Refrão]
+
 
            [C]
 Ele não desiste de você
@@ -3761,7 +3761,7 @@ Meu anseio é
         [Em7]         [D]
 Permanecer em Teu amor
 
-[Refrão]
+
 
            [C9]       [Am7]
 Em Tua presença Senhor
@@ -3795,7 +3795,7 @@ Em Tua presença Senhor Jesus
            [Am7]      [Em7]   [G]
 Em Tua presença Senhor Jesus
 
-[Refrão]
+
 
          [C9]   [Am7]       [Em7]           [D]
 Santo Espírito,  eu me rendo ao Teu agir
@@ -3830,7 +3830,7 @@ Meu anseio é
         [Em7]         [D]
 Permanecer em Teu amor
 
-[Refrão]
+
 
            [C9]       [Am7]
 Em Tua presença Senhor
@@ -3884,7 +3884,7 @@ Tempestades tu estás
     [D9]              [A4]
 Em todo tempo tu estás
 
-[Refrão]
+
 
   [D9]  [Bm7]  [A4]
 Ema______nuel
@@ -3927,7 +3927,7 @@ Tempestades tu estás
     [D9]              [A4]
 Em todo tempo tu estás
 
-[Refrão]
+
 
   [D9]  [Bm7]  [A4]
 Ema______nuel
@@ -3949,7 +3949,7 @@ Maravilhoso És, Jesus
    [D9]  [Em7]
 Jesu_______s
 
-[Refrão]
+
 
   [D9]  [Bm7]  [A4]
 Ema______nuel
@@ -4228,7 +4228,7 @@ Teu amor jamais me deixará
           [G7M]     [Bm7(11)]  [C9]
 Novo amanhã preparado pra mim
 
-[Refrão]
+
 
        [G9]             [D]
 Eu me rendo aos Teus pés
@@ -4270,7 +4270,7 @@ Teu amor jamais me deixará
           [G7M]     [Bm7(11)]  [C9]
 Novo amanhã preparado pra mim
 
-[Refrão]
+
 
        [G9]             [D]
 Eu me rendo aos Teus pés
@@ -4318,7 +4318,7 @@ Uma nova vida me entregou
          [D]                [Bm]    [A/C#]        [E4]  [E]
 O teu poder transforma meu ser de glória em glória
 
-[Refrão]
+
 
       [A2]             [F#m7(9)]
 Eu nasci de novo, nasci de novo
@@ -4348,7 +4348,7 @@ Uma nova vida me entregou
          [D]                [Bm]   [A/C#]        [E4]  [E]
 O teu poder transforma meu ser de glória em glória
 
-[Refrão]
+
 
       [A2]             [F#m7]
 Eu nasci de novo, nasci de novo
@@ -4384,7 +4384,7 @@ Faz - me ver assim como sou
 ( [G#m7]  [E2]  [B/D#] )
 ( [A]  [E/G#]  [C#m11]  [B/D#] )
 
-[Refrão]
+
 [F#4]  [F#]   [B]              [G#m7]
 Eu   nas__ci de novo, nasci de novo
     [E2]                   [F#4]  [F#]
@@ -4452,7 +4452,7 @@ Que me compreendeu
                     [D#]  [D#4]  [D#]
 Sem nenhuma explicação
 
-[Refrão] 
+ 
 
              [G#m7]
 Espírito, Espírito
@@ -4492,7 +4492,7 @@ Que me compreendeu
                     [D#]  [D#4]  [D#]
 Sem nenhuma explicação
 
-[Refrão] 
+ 
 
              [G#m7]
 Espírito, Espírito
@@ -4513,7 +4513,7 @@ Vem como em pentecostes
 E enche-me de novo
 
 
-[Refrão]
+
 
              [G#m7]
 Espírito, Espírito
@@ -4571,7 +4571,7 @@ Te entrego tudo que eu tenho e sou
            [G7M]
 E também quem não sou
 
-[Refrão]
+
 
 [C9]                     [Am7]
    Eu só quero tua presença
@@ -4617,7 +4617,7 @@ Te entrego tudo que eu tenho e sou
            [G]
 E também quem não sou
 
-[Refrão]
+
 
 [C9]                     [Am7]
    Eu só quero tua presença
@@ -4672,7 +4672,7 @@ Eu não quero mais, sair daqui
 [Am7]     [Em]      [D/F#]  [G]  [G/B]
     Me deixa morar
 
-[Refrão]
+
 
 [C9]                     [Am7]
    Eu só quero tua presença
@@ -4725,7 +4725,7 @@ Eu não quero mais, sair daqui
 [Am7]     [Em]      [D/F#]  [G]  [G/B]
     Me deixa morar
 
-[Refrão]
+
 
 [C9]                     [Am7]
    Eu só quero tua presença
@@ -4805,7 +4805,7 @@ Meu coração tem sede de ti
      [D]          [A9]
 Rei meu e Deus meu
 
-[Refrão]
+
 
         [Bm]  [G]     [D]     [A9]
 Faz chover,   Senhor Jesus
@@ -4881,7 +4881,7 @@ Teu Espírito me revela quem Tu és
    [A]       [C#m]  [B9]
 Ungido de Deus
 
-[Refrão]
+
 
           [C#m]             [B9]   [E]
 Tu és o Cristo, filho do Deus vivo
@@ -4928,7 +4928,7 @@ Teu Espírito me revela quem Tu és
    [A]       [C#m]  [B9]
 Ungido de Deus
 
-[Refrão]
+
 
           [C#m]             [B9]   [E]
 Tu és o Cristo, filho do Deus vivo
@@ -4989,7 +4989,7 @@ Não quero só me arrepiar não quero só me emocionar
       [Em]                    [Bm7]
 Não quero só experimentar quero mergulhar
 
-[Refrão]
+
 
  [C]              [Am7]
 Furioso oceano vem fluir dentro de mim
@@ -5025,7 +5025,7 @@ Não quero só me arrepiar não quero só me emocionar
       [Em]                    [Bm7]
 Não quero só experimentar quero mergulhar
 
-[Refrão]
+
 
  [C]              [Am7]
 Furioso oceano vem fluir dentro de mim
@@ -5068,7 +5068,7 @@ Não quero só me arrepiar não quero só me emocionar
       [Em]                    [Bm7]
 Não quero só experimentar quero mergulhar
 
-[Refrão]
+
 
  [C]              [Am7]
 Furioso oceano vem fluir dentro de mim
@@ -5146,7 +5146,7 @@ Santo de Israel
  [G4]
 Luz do Mundo
 
-[Refrão]
+
 
  [Dm7] [F7M]    [C]      [G4]
 Galileu, Jesus, Jesus
@@ -5186,7 +5186,7 @@ Santo de Israel
  [G4]
 Luz do Mundo
 
-[Refrão]
+
 
  [Dm7] [F7M]    [C]      [G4]
 Galileu, Jesus, Jesus
@@ -5223,7 +5223,7 @@ Oh, oh, oh, oh
 [Am]                [C]
     Oh, oh, oh, oh
 
-[Refrão]
+
 
  [Dm7] [F7M]    [C]      [G4]
 Galileu, Jesus, Jesus
@@ -5249,7 +5249,7 @@ A terra e o mar e o céu todo estrelado
           [D/F#]             [G]  [D]
 Me vêm falar da Tua perfeição
 
-[Refrão]
+
 
             [G]     [C]              [G]  [Em]
 Então minha alma canta a Ti, Senhor
@@ -5271,7 +5271,7 @@ Relembro, ó Deus, as glórias cintilantes
            [D]                   [G]  [D]
 Que meu Jesus deixou por meu amor
 
-[Refrão]
+
 
             [G]     [C]              [G]  [Em]
 Então minha alma canta a Ti, Senhor
@@ -5293,7 +5293,7 @@ Recordo a cruz, o lenho tão cruento
           [D]                    [G]  [D]
 E no Teu Filho afirmo a minha fé
 
-[Refrão]
+
 
             [G]     [C]              [G]  [Em]
 Então minha alma canta a Ti, Senhor
@@ -5315,7 +5315,7 @@ Meu coração, que n'Ele Tu ganhaste
                [D]                        [G]  [D]
 Transborda, ó Pai, de amor que não tem fim
 
-[Refrão]
+
 
             [G]     [C]              [G]  [Em]
 Então minha alma canta a Ti, Senhor
@@ -5337,7 +5337,7 @@ No lar eterno quero, jubilando
        [D]                 [G]  [D]
 A Tua santa face contemplar
 
-[Refrão]
+
 
             [G]     [C]              [G]  [Em]
 Então minha alma canta a Ti, Senhor
@@ -5389,7 +5389,7 @@ Em meio a guerra
         [C9]           [G]
 Esse lugar é no Senhor
 
-[Refrão]
+
 
                     [C9]
 Esse lugar é no Senhor
@@ -5432,7 +5432,7 @@ Se perde é que  se ganha
        [C9]         [G]
 Esse lugar é no Senhor
 
-[Refrão]
+
 
                     [C9]
 Esse lugar é no Senhor
@@ -5512,7 +5512,7 @@ Puderam cantar
              [A9]
 O hino da vitória
 
-[Refrão]
+
 
 [E]                              [C#m7]
   Quando estiver frente ao mar
@@ -5550,7 +5550,7 @@ Puderam cantar
              [A7M]
 O hino da vitória
 
-[Refrão]
+
 
 [E]                              [C#m7]
   Quando estiver frente ao mar
@@ -5715,7 +5715,7 @@ Não estou sozinho
 
 Tu estás comigo
 
-[Refrão]
+
 
 Temer por quê?
 [D9(11)]             [Em7]
@@ -5769,7 +5769,7 @@ Não estou sozinho
       [Am7]
 Tu estás comigo
 
-[Refrão]
+
 
 [C9]
    Temer por quê?
@@ -5850,7 +5850,7 @@ Em Ti meu Deus
            [Em7]  [Bm7]
 Em Ti meu Deus
 
-[Refrão]
+
 
 [C9]
    Temer por quê?
@@ -6048,7 +6048,7 @@ Estou aqui,  estou aqui
            [F7M(9)]  [Am]     [G4(6)]
 Confio em Ti,  confio em Ti
 
-[Refrão]
+
 
                [F7M(9)]
 Quero ir mais fundo
@@ -6075,7 +6075,7 @@ Pois a Tua glória quero ver
            [F7M(9)]  [Am]     [G4(6)]
 Confio em Ti,  confio em Ti
 
-[Refrão]
+
 
               [F7M(9)]
 Quero ir mais fundo
@@ -6141,7 +6141,7 @@ Tua majestade é real
           [G4(6)]
 Tua voz ecoa em meu ser
 
-[Refrão]
+
 
                [F7M(9)]
 Quero ir mais fundo
@@ -6300,7 +6300,7 @@ Mas Tua glória me atraiu
                 [C7M]
 Tua presença me atraiu
 
-[Refrão]
+
 
          [C9]
 É que a sarça pegou fogo
@@ -6357,7 +6357,7 @@ Mas Tua glória me atraiu
                 [C7M]
 Tua presença me atraiu, Deus
 
-[Refrão]
+
 
          [C9]
 É que a sarça pegou fogo
@@ -6417,7 +6417,7 @@ Atraído pela Tua presença
  [Em]                 [G7M] 
 Não me cansarei da Tua presença
 
-[Refrão]
+
          
 É que a sarça pegou fogo
 
@@ -6504,7 +6504,7 @@ Por Tua bondade, libertas meu ser
       [Am7]    [Bm7]  [C7M]       
 No calor deste lugar
 
-[Refrão]
+
 
 [D]         [G]              [D/F#]
 Eu venho me derramar, dizer que Te amo
@@ -6541,7 +6541,7 @@ Vivendo     em mim
  [D2]   [F#m]     [E4]  [E]
 Feita     em mim
 
-[Refrão]
+
 
   [A2]  [E/G#]  [F#m]  [E]
 E eu
@@ -6575,7 +6575,7 @@ Vivendo     em mim
  [D2]   [F#m]     [E4]  [E]
 Feita     em mim
 
-[Refrão]
+
 
   [A]  [E/G#]  [F#m]  [E]
 E eu
@@ -6641,7 +6641,7 @@ Eu vou cumprir minha missão
           [C#m]          [B]
 Levar ao mundo a salvação
 
-[Refrão]
+
 
  [A/C#]  [B/D#]    [E]
 Jesus, és meu salvador
@@ -6661,7 +6661,7 @@ Os meus pecados ele lavou
             [C#m]          [B]
 Na cruz morreu e me salvou
 
-[Refrão]
+
 
  [A/C#]  [B/D#]    [E]
 Jesus, és meu salvador
@@ -6698,7 +6698,7 @@ Se a luta é mais forte que as minhas forças
      [Ab/C]           [Gm7]       [Ab7M]
 E se eu não estiver mais aguentando
 
-[Refrão]
+
 
 [Cm7]           [Gm7]      [Ab7M]
 Mostra-me Tua Glória Senhor
@@ -6713,7 +6713,7 @@ Mostra-me Tua Glória Senhor
 
 ( [Eb7M]  [Gm7]  [Ab7M]  [Gm7]  [Ab/C]  [Gm7]  [Ab7M] )
 
-[Refrão]
+
 
 [Cm7]           [Gm7]      [Ab7M]
 Mostra-me Tua Glória Senhor
@@ -6755,7 +6755,7 @@ Espera Ele vem, Confia ele vem
             [A]   [E7(4/9)]  [D/F#]  [E/G#]
 E faz um milagre
 
-[Refrão]
+
 
 [A]              [E/G#]            [F#m7]
 Oh Deus eu vim aqui só pra te dizer
@@ -6845,7 +6845,7 @@ Um caminho para Ele onde posso me achegar
               [A]     [D9/F#]  [E]
 Somente pelo sangue
 
-[Refrão] 
+ 
 
   [A]
 Que nos lava dos pecados
@@ -6878,7 +6878,7 @@ Um caminho para Ele onde posso me achegar
               [A]     [D9/F#]  [E]
 Somente pelo sangue
 
-[Refrão] 
+ 
 
   [A]
 Que nos lava dos pecados
@@ -6974,7 +6974,7 @@ Mais do que tu podes fazer
             [C] ([C4]) [C]
 Só quero a ti
 
-[Refrão]
+
 
             [Dm7]
 Só quero a ti
@@ -7440,7 +7440,7 @@ Na Tua fumaça de glória eu entrarei
                 [C4]  [C]
 Não sei mais viver
 
-[Refrão]
+
 
       [F/A]  [Bb]                 [C7/Bb]
 Quem já   pisou no santo dos santos
@@ -7482,7 +7482,7 @@ Ho________ly, Ho__ly
  [Bb]  [C/Bb]      [Am]  [Dm]
 Ho________ly, Ho__ly
 
-[Refrão]
+
 
          [Bb]                 [C/Bb]
 Quem já pisou no santo dos santos
@@ -7546,7 +7546,7 @@ Vai ser bem melhor
  [B/C#]          
 Só porque estás comigo
 
-[Refrão]
+
 
     [F#]
 Eu posso clamar
@@ -7577,7 +7577,7 @@ Vai ser bem melhor
  [B/C#]  
 Só porque estás comigo
 
-[Refrão]
+
 
     [F#]
 Eu posso clamar
@@ -7623,7 +7623,7 @@ O presente que Deus enviou pra nós
  [D#m]  [C#]         [G#m]
 Je___sus, até o vento se cala pra ouvir tua voz
 
-[Refrão]
+
 
  [G]
 Posso clamar
@@ -7692,7 +7692,7 @@ Assim é minh'alma
             [E4]  [E]
 Preciso de Ti
 
-[Refrão] 
+ 
 
     [F#m7]     [C#m7]   [D]              
 Distante de Ti, Senhor 
@@ -7739,7 +7739,7 @@ Afasta as minhas transgressões
             [E4]  [E]
 Preciso de ti
 
-[Refrão] 
+ 
 
     [F#m7]     [C#m7]   [D]              
 Distante de Ti, Senhor 
@@ -7785,7 +7785,7 @@ Eu quero permanecer contigo até o fim
 ( [A/G]  [G]  [A/G] )
 ( [F]  [G/F]  [E4]  [E] )
 
-[Refrão] 
+ 
 
                  [A/C#]  [D]              
 Distante de Ti, Se___nhor 
@@ -7910,7 +7910,7 @@ Jesus, Jesus`,
 [C]                         [G]     [D]
   Vem manifestar os Seus sinais
 
-[Refrão]
+
 
 [C]
   O que dizer?
@@ -7935,7 +7935,7 @@ Nós Te desejamos outra vez aqui
 [C]                             [G]  [D]
   E com Seu fogo vem nos batizar
 
-[Refrão]
+
 
 [C9]
    O que dizer?
@@ -7988,7 +7988,7 @@ Faz de novo
 [G]            [Bm]
 O Seu povo clama a Ti
 
-[Refrão]
+
 
 [C9]
    O que dizer?
@@ -8031,7 +8031,7 @@ Vem mais uma vez
 [G]   [D]
 Ooh
 
-[Refrão]
+
 
 [C9]
    O que dizer?
@@ -8195,7 +8195,7 @@ E menos de mim
          [G]
 E menos de mim
 
-[Refrão]
+
 
           [Em]
 Que Ele cresça
@@ -8229,7 +8229,7 @@ E menos de mim
          [G]
 E menos de mim
 
-[Refrão]
+
 
           [Em]
 Que Ele cresça
@@ -8342,7 +8342,7 @@ Não apenas por quem sou mas porque tu és fiel
         [F/A]           [G/B]           [F]             [G] [C]
 Nem por tudo o que eu faça  mas por tudo o que Tu és
 
-[Refrão]
+
                [G/B]        [Am7]          [C/G]           [F]
 Eu sou como um vento passageiro que aparece e vai embora
      [G/F]        [F]               [G/B]  [C]
@@ -8369,7 +8369,7 @@ Não apenas por quem sou mas porque tu és fiel
         [F/A]           [G/B]           [F]             [G] [C]
 Nem por tudo o que eu faça  mas por tudo o que Tu és
 
-[Refrão]
+
 
                [G/B]        [Am7]          [C/G]           [F]
 Eu sou como um vento passageiro que aparece e vai embora
@@ -8391,7 +8391,7 @@ Não apenas por quem sou mas porque Tu és fiel
         [F/A]           [G/B]           [F]             [G/B]  [C]  [Em7]  [F]  [C]
 Nem por tudo o que eu faça  mas por tudo o que Tu és
 
-[Refrão]
+
 
                [G/B]        [Am7]          [C/G]           [F]
 Eu sou como um vento passageiro que aparece e vai embora
@@ -8534,7 +8534,7 @@ Que você possui
            [D/F#]                [G5]
 Isso é mistério de Deus com você
 
-[Refrão]
+
 
              [D9]   
 Você é um espelho 
@@ -8593,7 +8593,7 @@ Que você possui
            [D/F#]              [G5]
 Isso é mistério de Deus com você
 
-[Refrão]
+
 
              [D9]   
 Você é um espelho
@@ -8699,7 +8699,7 @@ Aquilo que só o Teu nome tem todo poder
                           [A]    [A4]
 Eu preciso tanto de um milagre
 
-[Refrão]
+
 
               [D]
 Remove minha pedra
@@ -8745,7 +8745,7 @@ Aquilo que só o Teu nome tem todo poder
                           [A]    [A4]
 Eu preciso tanto de um milagre     
 
-[Refrão]
+
 
               [D]
 Remove minha pedra
@@ -8789,7 +8789,7 @@ Me chamando pra viver
         [G]
 Uma história de poder!
 
-[Refrão]
+
 
               [E]
 Remove minha pedra
@@ -8855,7 +8855,7 @@ Seja excelente para o bem
   [C#m]       [A]
 E inocente para o mal
 
-[Refrão]
+
 
      [E]       [D]     [A]        [E]
 E o Deus de paz esmagará a satanás
@@ -8985,7 +8985,7 @@ Ninguém, ninguém`,
 [Gb]
   Dizendo Filho, não te deixei
 
-[Refrão]
+
           [Db]
 Quero buscar-te, oh, Deus
           [Bbm]
@@ -9024,7 +9024,7 @@ Para mim
   Dizendo Filho, não te deixei
 
 
-[Refrão]
+
           [Db]
 Quero buscar-te, oh, Deus
           [Bbm]
@@ -9063,7 +9063,7 @@ O choro pode durar uma noite inteira
          [Gb]                          [Ab]
 Mas a alegria vem em meio à provação
 
-[Refrão]
+
           [Db]
 Quero buscar-te, oh, Deus
           [Bbm]
@@ -9168,7 +9168,7 @@ O Senhor é alto sobre toda a Terra
        [G9]            [A9]       [D]   [A4]
 E exaltado sobre o trono dos céus
 
-[Refrão]
+
 
         [D9]            [A9]
 Te exaltamos, Te exaltamos
@@ -9184,7 +9184,7 @@ O Senhor é alto sobre toda a Terra
        [G9]            [A9]       [D]   [A4]
 E exaltado sobre o trono dos céus
 
-[Refrão]
+
 
         [D9]            [A9]
 Te exaltamos, Te exaltamos
@@ -9239,7 +9239,7 @@ Não sou apenas servo
       [F]          [Bb]  [Eb/Bb]  [Eb/G]  [F/A]
 Seu amigo me tornei
 
-[Refrão] 
+ 
 
 [Bb]     [F/Bb]  [Eb/Bb]
    Te louva_rei
@@ -9345,7 +9345,7 @@ Confessarei
     [G]          [D2]
 Mas o Teu nome é eterno
 
-[Refrão]
+
 
  [Em7]              [C9]
 Todo joelho dobrará
@@ -9373,7 +9373,7 @@ Confessarei
     [G]          [D2]
 Mas o Teu nome é eterno
 
-[Refrão]
+
 
  [Em7]              [C9]
 Todo joelho dobrará
@@ -9529,7 +9529,7 @@ E é para sempre
                    [C9]     [Em7]    [D]
 Eu sei que o seu amor ele é pra mim
 
-[Refrão]
+
 
                    [Em7]  [C9]
 Tem tudo a ver com Ele
@@ -9613,7 +9613,7 @@ Teu amor por mim permanecerá
 ( [C9]  [Em7]  [D] )
 ( [C9]  [Em7]  [D] )
 
-[Refrão]
+
 
                    [Em7]  [C9]
 Tem tudo a ver com Ele
@@ -9704,7 +9704,7 @@ Para ti, filho meu
                 [B4]         [D9]   
 Minha benção será sobre ti
 
-[Refrão]
+
 
              [A9]         [D9]      [E]
 Uma nova história Deus tem pra mim
@@ -9757,7 +9757,7 @@ Para ti, filho meu
                 [B4]         [D9]   
 Minha benção será sobre ti
 
-[Refrão]
+
 
              [A9]         [D9]      [E]
 Uma nova história Deus tem pra mim
@@ -10047,7 +10047,7 @@ E eu passarei pulando e dançando
            [Em]   [C]
 Em sua presença
 
-[Refrão]
+
 
              [G]
 Por isso eu pulo, pulo, pulo
@@ -10093,7 +10093,7 @@ E eu passarei pulando e dançando
            [Em]   [C]
 Em sua presença
 
-[Refrão]
+
 
              [G]
 Por isso eu pulo, pulo, pulo
@@ -10239,7 +10239,7 @@ Em meio às tribulações
           [A2]   [F#m7(11)]
 Nós o adoramos 
 
-[Refrão] 
+ 
 
 [C#m7]           [A2]
      Vitorioso és 
@@ -10269,7 +10269,7 @@ Muralhas vão estremecer
              [A2]   [F#m7(11)]
 Enquanto adoramos 
 
-[Refrão] 
+ 
 
 [C#m7]           [A2]
      Vitorioso és 
@@ -10325,7 +10325,7 @@ Poderoso és
       [B4]
 Grandioso és
 
-[Refrão] 
+ 
 
 [C#m7]           [A2]
      Vitorioso és 
