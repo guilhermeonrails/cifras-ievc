@@ -81,7 +81,19 @@
         <!-- 2.1. Lista de Músicas (Sidebar) -->
         <nav id="sidebar"
             class="w-full sm:w-64 bg-gray-800 text-white overflow-y-auto p-4 flex-shrink-0 hidden md:block">
-            <h2 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Músicas</h2>
+            <!-- <h2 class="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Músicas</h2> -->
+
+            <!-- Toggle Charts/Cifras -->
+            <div class="flex mb-4 bg-gray-700 rounded-lg p-1">
+                <button id="filter-btn-charts" onclick="setListFilterMode('charts')"
+                    class="flex-1 py-1 px-2 rounded-md text-sm font-medium transition-colors duration-200 bg-teal-600 text-white">
+                    Charts
+                </button>
+                <button id="filter-btn-cifras" onclick="setListFilterMode('cifras')"
+                    class="flex-1 py-1 px-2 rounded-md text-sm font-medium transition-colors duration-200 bg-gray-700 text-gray-300 hover:text-white">
+                    Cifras
+                </button>
+            </div>
 
             <!-- Campo de Busca e Filtro de Favoritos -->
             <div class="mb-4 flex space-x-2">

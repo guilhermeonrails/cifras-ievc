@@ -22,6 +22,33 @@ const MIN_FONT_SIZE = 0.8;
 const MAX_FONT_SIZE = 3.0;
 const FONT_STEP = 0.1;
 
+let listFilterMode = 'charts'; // 'charts' (default) or 'cifras'
+
+function setListFilterMode(mode) {
+    listFilterMode = mode;
+    renderSongList();
+    updateFilterButtons();
+}
+
+function updateFilterButtons() {
+    const btnCharts = document.getElementById('filter-btn-charts');
+    const btnCifras = document.getElementById('filter-btn-cifras');
+
+    if (btnCharts && btnCifras) {
+        if (listFilterMode === 'charts') {
+            btnCharts.classList.add('bg-teal-600', 'text-white');
+            btnCharts.classList.remove('bg-gray-700', 'text-gray-300');
+            btnCifras.classList.remove('bg-teal-600', 'text-white');
+            btnCifras.classList.add('bg-gray-700', 'text-gray-300');
+        } else {
+            btnCharts.classList.remove('bg-teal-600', 'text-white');
+            btnCharts.classList.add('bg-gray-700', 'text-gray-300');
+            btnCifras.classList.add('bg-teal-600', 'text-white');
+            btnCifras.classList.remove('bg-gray-700', 'text-gray-300');
+        }
+    }
+}
+
 
 // --- 2. LÓGICA DE TRANSPOSIÇÃO E RENDERING ---
 
@@ -330,10 +357,20 @@ function renderSongList() {
 
     const filteredSongs = SONGS.filter(song => {
         const matchesSearch = song.title.toLowerCase().includes(term) ||
-            song.chord_text.toLowerCase().includes(term);
+            (song.chord_text && song.chord_text.toLowerCase().includes(term));
         const matchesFavorite = showFavoritesOnly ? favorites.has(song.id) : true;
 
-        return matchesSearch && matchesFavorite;
+        // Filter by Mode
+        let matchesMode = true;
+        if (listFilterMode === 'charts') {
+            // Must have chart image or charts array
+            matchesMode = !!(song.chart_image || (song.charts && song.charts.length > 0));
+        } else {
+            // Must have chord text
+            matchesMode = !!(song.chord_text && song.chord_text.trim().length > 0);
+        }
+
+        return matchesSearch && matchesFavorite && matchesMode;
     });
 
     if (filteredSongs.length === 0) {
@@ -382,6 +419,7 @@ function renderSongList() {
 
 function initializeSongList() {
     renderSongList();
+    updateFilterButtons();
 }
 
 function filterSongs(searchTerm) {
@@ -576,3 +614,4 @@ window.changeFontSize = changeFontSize;
 window.toggleAutoScroll = toggleAutoScroll;
 window.toggleViewMode = toggleViewMode;
 window.toggleFullscreen = toggleFullscreen;
+window.setListFilterMode = setListFilterMode;
