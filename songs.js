@@ -10444,4 +10444,10 @@ Teu nome imutável é`,
       { tone: "F", image: "charts/primeira-essencia/F.png" },
     ]
   },
+  {
+    id: 1096,
+    title: "Canção de Simeão",
+    chord_text: "",
+    chart_image: "charts/cancao de simeao.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));

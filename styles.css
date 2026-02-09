@@ -6,7 +6,8 @@ body {
 /* Variável CSS para controlar o tamanho da fonte da cifra */
 .cifra-content {
     font-size: var(--cifra-font-size, 1.1rem);
-    white-space: pre-wrap; /* Preserva formatação e quebras de linha */
+    white-space: pre-wrap;
+    /* Preserva formatação e quebras de linha */
     word-wrap: break-word;
 }
 
@@ -14,6 +15,7 @@ body {
 .columns-1 {
     column-count: 1;
 }
+
 .columns-2 {
     column-count: 2;
     column-gap: 2rem;
@@ -21,7 +23,8 @@ body {
 
 /* Estilo para acordes */
 .cifra-content .chord {
-    color: #0d9488; /* Teal 600 */
+    color: #0d9488;
+    /* Teal 600 */
     font-weight: bold;
     font-size: 1.2em;
     margin-right: 0.25em;
@@ -29,7 +32,8 @@ body {
 
 /* Estilo de rolagem para a área principal */
 #cifra-viewer {
-    max-height: calc(100vh - 4rem - 2px); /* Altura da tela menos o cabeçalho */
+    max-height: calc(100vh - 4rem - 2px);
+    /* Altura da tela menos o cabeçalho */
     overflow-y: auto;
 }
 
