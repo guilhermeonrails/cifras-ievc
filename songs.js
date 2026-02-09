@@ -479,8 +479,14 @@ Até mil gerações
 Tua família e teus filhos
       [D]
 E os filhos dos teus filhos
-`
-
+`,
+    chart_image: "charts/A benção/G.png",
+    charts: [
+      { tone: "G", image: "charts/A benção/G.png" },
+      { tone: "A", image: "charts/A benção/A.png" },
+      { tone: "D", image: "charts/A benção/D.png" },
+      { tone: "E", image: "charts/A benção/F.png" },
+    ]
   },
   {
     id: 7,
