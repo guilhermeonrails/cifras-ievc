@@ -284,6 +284,19 @@ function updateDisplay() {
             // Hide font controls
             const fontControls = document.getElementById('font-controls');
             if (fontControls) fontControls.classList.add('hidden');
+
+            // Handle Tone Controls Visibility for Charts
+            const toneControls = document.getElementById('tone-controls');
+            if (toneControls) {
+                if (song.charts && song.charts.length > 1) {
+                    toneControls.classList.remove('hidden');
+                    toneControls.classList.add('flex');
+                } else {
+                    toneControls.classList.add('hidden');
+                    toneControls.classList.remove('flex');
+                }
+            }
+
         } else {
             displayElement.classList.remove('hidden');
             chartDisplay.classList.add('hidden');
@@ -302,6 +315,13 @@ function updateDisplay() {
             // Show font controls
             const fontControls = document.getElementById('font-controls');
             if (fontControls) fontControls.classList.remove('hidden');
+
+            // Show tone controls (always for text)
+            const toneControls = document.getElementById('tone-controls');
+            if (toneControls) {
+                toneControls.classList.remove('hidden');
+                toneControls.classList.add('flex');
+            }
         }
 
     } else {
@@ -312,10 +332,24 @@ function updateDisplay() {
     }
 
     // Ensure auto-scroll button visibility is correct if in fullscreen
-    const header = document.querySelector('header');
+
+    // Update Auto-Scroll Button Visibility
     const scrollButton = document.getElementById('auto-scroll-button');
-    if (header && header.classList.contains('hidden') && scrollButton) {
-        if (viewMode === 'image') {
+    const header = document.querySelector('header');
+    if (scrollButton) {
+        let shouldHide = false;
+
+        // Rule: Hide if Single Page Chart
+        if (viewMode === 'image' && (!song.charts || song.charts.length <= 1)) {
+            shouldHide = true;
+        }
+
+        // Rule: Hide if Fullscreen and Image Mode (Existing Logic)
+        if (header && header.classList.contains('hidden') && viewMode === 'image') {
+            shouldHide = true;
+        }
+
+        if (shouldHide) {
             scrollButton.classList.add('hidden');
         } else {
             scrollButton.classList.remove('hidden');
@@ -517,9 +551,21 @@ function toggleFullscreen() {
             if (btnMin) btnMin.classList.add('hidden');
             if (cifraViewer) cifraViewer.classList.remove('fullscreen-viewer');
 
-            // Re-show auto scroll button
+            // Re-show auto scroll button ONLY if allowed
             const scrollButton = document.getElementById('auto-scroll-button');
-            if (scrollButton) scrollButton.classList.remove('hidden');
+            if (scrollButton) {
+                const song = SONGS.find(s => s.id === currentSongId);
+                let shouldShow = true;
+                if (viewMode === 'image' && (!song.charts || song.charts.length <= 1)) {
+                    shouldShow = false;
+                }
+
+                if (shouldShow) {
+                    scrollButton.classList.remove('hidden');
+                } else {
+                    scrollButton.classList.add('hidden');
+                }
+            }
 
         } else {
             // Entrar no modo tela cheia

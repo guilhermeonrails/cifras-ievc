@@ -1,7 +1,7 @@
 const SONGS = [
   {
     id: 1,
-    title: "Vem, esta é a Hora",
+    title: "Vem, esta é a hora",
     chord_text: `
 [D]                      [D4]  [D]
 Vem, esta é a hora da adoração
