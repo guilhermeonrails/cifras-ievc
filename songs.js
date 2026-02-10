@@ -931,7 +931,15 @@ Não cessarão os seus frutos e viverá
     id: 20,
     title: "Poderoso Deus",
     chord_text: "",
-    chart_image: "charts/Poderoso Deus.png"
+    chart_image: "charts/Poderoso Deus/G.png",
+    charts: [
+      { tone: "C", image: "charts/Poderoso Deus/C.png" },
+      { tone: "D", image: "charts/Poderoso Deus/D.png" },
+      { tone: "E", image: "charts/Poderoso Deus/E.png" },
+      { tone: "F", image: "charts/Poderoso Deus/F.png" },
+      { tone: "G", image: "charts/Poderoso Deus/G.png" },
+      { tone: "A", image: "charts/Poderoso Deus/A.png" },
+    ]
   },
   {
     id: 21,
