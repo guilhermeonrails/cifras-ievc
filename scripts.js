@@ -205,6 +205,19 @@ function loadSong(songId) {
     // but simpler to just toggle class on the element
     renderSongList();
     updateDisplay();
+
+    // NEW: On mobile, automatically show the viewer when a song is selected
+    if (window.innerWidth < 768) {
+        const sidebar = document.getElementById('sidebar');
+        const cifraViewer = document.getElementById('cifra-viewer');
+        const scrollButton = document.getElementById('auto-scroll-button');
+
+        if (sidebar && !sidebar.classList.contains('hidden')) {
+            sidebar.classList.add('hidden');
+            if (cifraViewer) cifraViewer.classList.remove('hidden');
+            // scroll button visibility is handled by updateDisplay based on song properties
+        }
+    }
 }
 
 function updateDisplay() {
@@ -339,14 +352,18 @@ function updateDisplay() {
     if (scrollButton) {
         let shouldHide = false;
 
-        // Rule: Hide if Single Page Chart
-        if (viewMode === 'image' && (!song.charts || song.charts.length <= 1)) {
+        if (!song) {
             shouldHide = true;
-        }
+        } else {
+            // Rule: Hide if Single Page Chart
+            if (viewMode === 'image' && (!song.charts || song.charts.length <= 1)) {
+                shouldHide = true;
+            }
 
-        // Rule: Hide if Fullscreen and Image Mode (Existing Logic)
-        if (header && header.classList.contains('hidden') && viewMode === 'image') {
-            shouldHide = true;
+            // Rule: Hide if Fullscreen and Image Mode (Existing Logic)
+            if (header && header.classList.contains('hidden') && viewMode === 'image') {
+                shouldHide = true;
+            }
         }
 
         if (shouldHide) {
@@ -597,9 +614,21 @@ window.onload = () => {
     // Inicializa a lista de músicas e carrega a primeira música
     initializeSongList();
     if (SONGS.length > 0) {
-        loadSong(SONGS[0].id);
+        // loadSong(SONGS[0].id); // REMOVED: Do not load first song automatically
+        updateDisplay();
     } else {
         updateDisplay();
+    }
+
+    // Check for mobile initial state: Show Sidebar, Hide Viewer
+    if (window.innerWidth < 768) {
+        const sidebar = document.getElementById('sidebar');
+        const cifraViewer = document.getElementById('cifra-viewer');
+        const scrollButton = document.getElementById('auto-scroll-button');
+
+        if (sidebar) sidebar.classList.remove('hidden');
+        if (cifraViewer) cifraViewer.classList.add('hidden');
+        if (scrollButton) scrollButton.classList.add('hidden');
     }
 
     const viewer = document.getElementById('cifra-viewer'); // Or a specialized container if needed
