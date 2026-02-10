@@ -242,6 +242,7 @@ function updateDisplay() {
 
     if (song) {
         titleElement.textContent = song.title;
+        titleElement.classList.remove('mt-10');
 
         // Determine content availability
         const hasText = song.chord_text && song.chord_text.trim().length > 0;
@@ -338,8 +339,9 @@ function updateDisplay() {
         }
 
     } else {
-        titleElement.textContent = "Nenhuma Música Selecionada";
-        displayElement.innerHTML = '<p class="text-gray-500 text-center mt-20">Selecione uma música no menu à esquerda para visualizar a cifra.</p>';
+        titleElement.textContent = "🎸🥁🎤";
+        titleElement.classList.add('mt-10');
+        displayElement.innerHTML = '<p class="text-gray-500 text-center mt-10">Selecione uma música no menu à esquerda para visualizar a cifra.</p>';
         chartDisplay.classList.add('hidden');
         viewToggle.classList.add('hidden');
     }
