@@ -10355,9 +10355,9 @@ Teu nome imutável é`,
   },
   {
     id: 1096,
-    title: "Primeira essência",
+    title: "Primeira Essência",
     chord_text: "",
-    chart_image: "charts/primeira-essencia/F.png",
+    chart_image: "charts/primeira-essencia/G.png",
     charts: [
       { tone: "G", image: "charts/primeira-essencia/G.png" },
       { tone: "D", image: "charts/primeira-essencia/D.png" },
@@ -10365,13 +10365,13 @@ Teu nome imutável é`,
     ]
   },
   {
-    id: 1096,
+    id: 1097,
     title: "Canção de Simeão",
     chord_text: "",
     chart_image: "charts/cancao de simeao.png",
   },
   {
-    id: 1097,
+    id: 1098,
     title: "Leva-me além",
     chord_text: "",
     chart_image: "charts/Leva-me além.png",
