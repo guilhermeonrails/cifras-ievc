@@ -10390,4 +10390,17 @@ Teu nome imutável é`,
       { tone: "A", image: "charts/santo santo santo/A.png" },
     ]
   },
+  {
+    id: 1100,
+    title: "Ressussita-me",
+    chord_text: "",
+    chart_image: "charts/Ressussita-me/D.png",
+    charts: [
+      { tone: "D", image: "charts/Ressussita-me/D.png" },
+      { tone: "E", image: "charts/Ressussita-me/E.png" },
+      { tone: "G", image: "charts/Ressussita-me/G.png" },
+      { tone: "A", image: "charts/Ressussita-me/A.png" },
+      { tone: "C", image: "charts/Ressussita-me/C.png" },
+    ]
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
