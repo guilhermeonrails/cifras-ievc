@@ -10403,4 +10403,5 @@ Teu nome imutável é`,
       { tone: "C", image: "charts/Ressussita-me/C.png" },
     ]
   },
+
 ].sort((a, b) => a.title.localeCompare(b.title));
