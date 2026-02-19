@@ -10376,4 +10376,18 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/Leva-me além.png",
   },
+  {
+    id: 1099,
+    title: "Santo Santo Santo",
+    chord_text: "",
+    chart_image: "charts/santo santo santo/C.png",
+    charts: [
+      { tone: "C", image: "charts/santo santo santo/C.png" },
+      { tone: "D", image: "charts/santo santo santo/D.png" },
+      { tone: "E", image: "charts/santo santo santo/E.png" },
+      { tone: "F", image: "charts/santo santo santo/F.png" },
+      { tone: "G", image: "charts/santo santo santo/G.png" },
+      { tone: "A", image: "charts/santo santo santo/A.png" },
+    ]
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
