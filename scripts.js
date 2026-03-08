@@ -11,7 +11,7 @@ let currentSongId = null;
 let transposeOffset = 0; // 0 significa tom original
 let isTwoColumns = false;
 let currentFontSize = 1.1; // Tamanho inicial em rem
-let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
 let favoriteSettings = JSON.parse(localStorage.getItem('favoriteSettings') || '{}');
 let showFavoritesOnly = false;
 let currentSearchTerm = '';
@@ -127,7 +127,7 @@ function transpose(direction) {
             if (currentChartIndex < 0) currentChartIndex = song.charts.length - 1;
 
             // Persist setting if favorited
-            if (favorites.has(currentSongId)) {
+            if (favorites.includes(currentSongId)) {
                 favoriteSettings[currentSongId] = { chartIndex: currentChartIndex };
                 localStorage.setItem('favoriteSettings', JSON.stringify(favoriteSettings));
             }
@@ -178,7 +178,7 @@ function loadSong(songId) {
     currentFontSize = 1.1;
 
     // Restore chart index if favorited and saved
-    if (favorites.has(songId) && favoriteSettings[songId]) {
+    if (favorites.includes(songId) && favoriteSettings[songId]) {
         if (typeof favoriteSettings[songId].chartIndex === 'number') {
             currentChartIndex = favoriteSettings[songId].chartIndex;
         }
@@ -381,18 +381,19 @@ function toggleFavorite(songId, event) {
         event.stopPropagation();
     }
 
-    if (favorites.has(songId)) {
-        favorites.delete(songId);
+    const index = favorites.indexOf(songId);
+    if (index > -1) {
+        favorites.splice(index, 1);
         // Clean up settings when unfavoriting
         if (favoriteSettings[songId]) {
             delete favoriteSettings[songId];
             localStorage.setItem('favoriteSettings', JSON.stringify(favoriteSettings));
         }
     } else {
-        favorites.add(songId);
+        favorites.push(songId);
     }
 
-    localStorage.setItem('favorites', JSON.stringify([...favorites]));
+    localStorage.setItem('favorites', JSON.stringify(favorites));
     renderSongList();
 }
 
@@ -420,7 +421,7 @@ function renderSongList() {
     const filteredSongs = SONGS.filter(song => {
         const matchesSearch = song.title.toLowerCase().includes(term) ||
             (song.chord_text && song.chord_text.toLowerCase().includes(term));
-        const matchesFavorite = showFavoritesOnly ? favorites.has(song.id) : true;
+        const matchesFavorite = showFavoritesOnly ? favorites.includes(song.id) : true;
 
         // Filter by Mode
         let matchesMode = true;
@@ -435,26 +436,40 @@ function renderSongList() {
         return matchesSearch && matchesFavorite && matchesMode;
     });
 
+    if (showFavoritesOnly && currentSearchTerm === '') {
+        filteredSongs.sort((a, b) => {
+            return favorites.indexOf(a.id) - favorites.indexOf(b.id);
+        });
+    }
+
     if (filteredSongs.length === 0) {
         listElement.innerHTML = '<li class="text-gray-400 p-2 text-sm italic">Nenhuma música encontrada.</li>';
         return;
     }
 
     filteredSongs.forEach(song => {
-        const isFav = favorites.has(song.id);
+        const isFav = favorites.includes(song.id);
         const isSelected = song.id === currentSongId;
 
         const li = document.createElement('li');
         li.id = `song-item-${song.id}`;
-        li.className = `flex justify-between items-center cursor-pointer p-2 rounded-lg transition duration-150 text-base ${isSelected ? 'bg-teal-700 font-bold' : 'hover:bg-gray-700'}`;
+        li.className = `flex items-center cursor-pointer p-2 rounded-lg transition duration-150 text-base ${isSelected ? 'bg-teal-700 font-bold' : 'hover:bg-gray-700'}`;
         li.onclick = () => loadSong(song.id);
+
+        if (showFavoritesOnly && currentSearchTerm === '') {
+            const handleSpan = document.createElement('span');
+            handleSpan.innerHTML = '☰';
+            handleSpan.className = 'drag-handle mr-3 text-gray-400 cursor-grab hover:text-white text-lg flex-shrink-0';
+            handleSpan.onclick = (e) => e.stopPropagation();
+            li.appendChild(handleSpan);
+        }
 
         const titleSpan = document.createElement('span');
         titleSpan.textContent = song.title;
         titleSpan.className = 'flex-grow truncate'; // Ensure title takes available space
 
         const iconsDiv = document.createElement('div');
-        iconsDiv.className = 'flex items-center space-x-2 flex-shrink-0';
+        iconsDiv.className = 'flex items-center space-x-2 flex-shrink-0 ml-2';
 
         if (song.chart_image || (song.charts && song.charts.length > 0)) {
             const chartIcon = document.createElement('span');
@@ -477,6 +492,38 @@ function renderSongList() {
         li.appendChild(iconsDiv);
         listElement.appendChild(li);
     });
+
+    initSortable();
+}
+
+let sortableList = null;
+
+function initSortable() {
+    const listElement = document.getElementById('song-list');
+    if (sortableList) {
+        sortableList.destroy();
+        sortableList = null;
+    }
+
+    if (showFavoritesOnly && currentSearchTerm === '' && listElement) {
+        sortableList = Sortable.create(listElement, {
+            handle: '.drag-handle',
+            animation: 150,
+            onEnd: function () {
+                const newOrderIds = [];
+                listElement.querySelectorAll('li').forEach(li => {
+                    const id = li.id.replace('song-item-', '');
+                    newOrderIds.push(id);
+                });
+
+                const updatedFavorites = newOrderIds.map(id => {
+                    return favorites.find(fav => String(fav) === id);
+                });
+                favorites = updatedFavorites;
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            }
+        });
+    }
 }
 
 function initializeSongList() {
@@ -638,11 +685,27 @@ window.onload = () => {
     if (viewer) {
         viewer.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
         }, { passive: true });
 
         viewer.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
             handleSwipe();
+        }, { passive: true });
+
+        viewer.addEventListener('wheel', e => {
+            const header = document.querySelector('header');
+            const isFullscreen = header && header.classList.contains('hidden');
+            if (isFullscreen && viewMode === 'image') {
+                if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 20) {
+                    if (e.deltaX > 0) {
+                        triggerAdjacentSong(1); // Scroll right -> Next
+                    } else {
+                        triggerAdjacentSong(-1); // Scroll left -> Prev
+                    }
+                }
+            }
         }, { passive: true });
     }
 };
@@ -650,6 +713,17 @@ window.onload = () => {
 // --- Swipe Navigation Logic ---
 let touchStartX = 0;
 let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
+let wheelDebounceTimeout = null;
+
+function triggerAdjacentSong(direction) {
+    if (wheelDebounceTimeout) return;
+    loadAdjacentSong(direction);
+    wheelDebounceTimeout = setTimeout(() => {
+        wheelDebounceTimeout = null;
+    }, 500); // 500ms debounce
+}
 
 function handleSwipe() {
     const header = document.querySelector('header');
@@ -661,36 +735,55 @@ function handleSwipe() {
     }
 
     const SWIPE_THRESHOLD = 50; // Minimum distance to consider a swipe
+    const VERTICAL_THRESHOLD = 50; // Max allowed vertical movement
 
-    // Right to Left Swipe (Next Song)
-    // StartX > EndX
-    if (touchStartX - touchEndX > SWIPE_THRESHOLD) {
-        loadNextFavorite();
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+
+    if (Math.abs(diffY) > VERTICAL_THRESHOLD) {
+        return; // Reject if it's mostly a vertical scroll
+    }
+
+    if (diffX < -SWIPE_THRESHOLD) {
+        // Swipe Left (finger moves left) -> Next
+        triggerAdjacentSong(1);
+    } else if (diffX > SWIPE_THRESHOLD) {
+        // Swipe Right (finger moves right) -> Prev
+        triggerAdjacentSong(-1);
     }
 }
 
-function loadNextFavorite() {
-    // 1. Get List of Favorites (Sorted as in SONGS)
-    const favoriteSongs = SONGS.filter(song => favorites.has(song.id));
+function loadAdjacentSong(direction) {
+    const listElement = document.getElementById('song-list');
+    const lis = listElement.querySelectorAll('li');
+    if (lis.length === 0) return;
 
-    if (favoriteSongs.length === 0) return; // No favorites
+    // Get all valid IDs from the current DOM list to respect any current filter/sort
+    const visibleIds = [];
+    lis.forEach(li => {
+        if (li.id.startsWith('song-item-')) {
+            const id = Number(li.id.replace('song-item-', ''));
+            if (!isNaN(id)) visibleIds.push(id);
+        }
+    });
 
-    // 2. Find Current Song Index in Favorites
-    const currentIndex = favoriteSongs.findIndex(song => song.id === currentSongId);
+    if (visibleIds.length === 0) return;
 
+    const currentIndex = visibleIds.indexOf(currentSongId);
     let nextIndex = 0;
+
     if (currentIndex !== -1) {
-        // Found current song in favorites, go to next
-        nextIndex = (currentIndex + 1) % favoriteSongs.length;
+        nextIndex = currentIndex + direction;
+        // Wrap around list bounds
+        if (nextIndex >= visibleIds.length) nextIndex = 0;
+        if (nextIndex < 0) nextIndex = visibleIds.length - 1;
     } else {
-        // Current song is not in favorites, go to first favorite
-        nextIndex = 0;
+        nextIndex = direction > 0 ? 0 : visibleIds.length - 1;
     }
 
-    // 3. Load Next Song
-    const nextSong = favoriteSongs[nextIndex];
-    if (nextSong) {
-        loadSong(nextSong.id);
+    const nextId = visibleIds[nextIndex];
+    if (nextId) {
+        loadSong(nextId);
     }
 }
 
