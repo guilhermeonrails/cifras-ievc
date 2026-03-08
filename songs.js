@@ -10403,4 +10403,22 @@ Teu nome imutável é`,
       { tone: "C", image: "charts/Ressussita-me/C.png" },
     ]
   },
+  {
+    id: 1101,
+    title: "Pai nosso",
+    chord_text: "",
+    chart_image: "charts/pai-nosso.png",
+  },
+  {
+    id: 1102,
+    title: "Emaus",
+    chord_text: "",
+    chart_image: "charts/Emaus.png",
+  },
+  {
+    id: 1103,
+    title: "Vai valer a pena",
+    chord_text: "",
+    chart_image: "charts/vai-valer-a-pena.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
