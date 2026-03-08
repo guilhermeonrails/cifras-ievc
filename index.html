@@ -127,6 +127,17 @@
                 </svg>
             </button>
 
+            <!-- Botão de Comentário (apenas em tela cheia e partitura) -->
+            <button id="comment-btn" onclick="toggleCommentMode()"
+                class="hidden absolute top-4 left-4 p-2 bg-gray-100 bg-opacity-50 text-gray-600 rounded-full hover:bg-opacity-100 transition duration-150 z-10"
+                title="Adicionar Comentário">
+                <svg id="icon-pencil" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+            </button>
+
             <div class="w-full h-full">
                 <h2 id="cifra-title" class="text-3xl font-extrabold mb-4 text-center text-gray-900"></h2>
                 <div id="cifra-display" class="cifra-content columns-1 transition-all duration-300">
@@ -135,7 +146,10 @@
                     </p>
                 </div>
                 <div id="chart-display" class="hidden flex justify-center items-start w-full h-full overflow-auto">
-                    <img id="chart-image" src="" alt="Partitura" class="max-w-full h-auto shadow-lg rounded-lg">
+                    <div id="chart-image-container" class="relative inline-block">
+                        <img id="chart-image" src="" alt="Partitura" class="max-w-full h-auto shadow-lg rounded-lg">
+                        <!-- Comentários serão inseridos aqui via JS -->
+                    </div>
                 </div>
             </div>
         </section>

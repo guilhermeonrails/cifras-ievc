@@ -17,6 +17,7 @@ let showFavoritesOnly = false;
 let currentSearchTerm = '';
 let viewMode = 'text'; // 'text' or 'image'
 let currentChartIndex = 0;
+let isCommentMode = false;
 
 const MIN_FONT_SIZE = 0.8;
 const MAX_FONT_SIZE = 3.0;
@@ -284,6 +285,7 @@ function updateDisplay() {
                 chartImage.src = song.chart_image;
             }
 
+            setTimeout(renderComments, 10);
 
             // Update Buttons
             btnText.classList.remove('bg-indigo-600', 'text-white');
@@ -614,8 +616,11 @@ function toggleFullscreen() {
             // Sair do modo tela cheia
             header.classList.remove('hidden');
             if (btnMax) btnMax.classList.remove('hidden');
-            if (btnMin) btnMin.classList.add('hidden');
             if (cifraViewer) cifraViewer.classList.remove('fullscreen-viewer');
+
+            const commentBtn = document.getElementById('comment-btn');
+            if (commentBtn) commentBtn.classList.add('hidden');
+            if (isCommentMode) toggleCommentMode();
 
             // Re-show auto scroll button ONLY if allowed
             const scrollButton = document.getElementById('auto-scroll-button');
@@ -644,6 +649,9 @@ function toggleFullscreen() {
             if (viewMode === 'image') {
                 const scrollButton = document.getElementById('auto-scroll-button');
                 if (scrollButton) scrollButton.classList.add('hidden');
+
+                const commentBtn = document.getElementById('comment-btn');
+                if (commentBtn) commentBtn.classList.remove('hidden');
             }
         }
     }
@@ -707,6 +715,11 @@ window.onload = () => {
                 }
             }
         }, { passive: true });
+    }
+
+    const chartContainer = document.getElementById('chart-image-container');
+    if (chartContainer) {
+        chartContainer.addEventListener('click', handleChartClick);
     }
 };
 
@@ -794,3 +807,177 @@ window.toggleAutoScroll = toggleAutoScroll;
 window.toggleViewMode = toggleViewMode;
 window.toggleFullscreen = toggleFullscreen;
 window.setListFilterMode = setListFilterMode;
+window.toggleCommentMode = toggleCommentMode;
+
+// --- 4. COMENTÁRIOS E TELAS CHEIAS ---
+
+function toggleCommentMode() {
+    isCommentMode = !isCommentMode;
+    const btn = document.getElementById('comment-btn');
+    if (btn) {
+        if (isCommentMode) {
+            btn.classList.add('bg-red-500', 'text-white', 'bg-opacity-100');
+            btn.classList.remove('bg-gray-100', 'text-gray-600', 'bg-opacity-50');
+        } else {
+            btn.classList.remove('bg-red-500', 'text-white', 'bg-opacity-100');
+            btn.classList.add('bg-gray-100', 'text-gray-600', 'bg-opacity-50');
+        }
+    }
+}
+
+function renderComments() {
+    const container = document.getElementById('chart-image-container');
+    if (!container) return;
+
+    // Remove antigos
+    container.querySelectorAll('.chart-comment').forEach(n => n.remove());
+
+    if (!currentSongId) return;
+
+    const commentsMap = JSON.parse(localStorage.getItem('chartComments') || '{}');
+    const key = `${currentSongId}_${currentChartIndex}`;
+    const comments = commentsMap[key] || [];
+
+    const now = Date.now();
+    const TWO_HOURS_MS = 2 * 60 * 60 * 1000;
+
+    const validComments = comments.filter(c => now - c.timestamp < TWO_HOURS_MS);
+
+    if (validComments.length !== comments.length) {
+        commentsMap[key] = validComments;
+        localStorage.setItem('chartComments', JSON.stringify(commentsMap));
+    }
+
+    validComments.forEach(c => {
+        const div = document.createElement('div');
+        div.className = 'chart-comment absolute bg-yellow-200 text-yellow-900 border border-yellow-400 p-2 pr-6 rounded shadow-md text-sm font-bold max-w-xs break-words z-20 cursor-grab flex items-start';
+        div.style.left = `${c.x}%`;
+        div.style.top = `${c.y}%`;
+        div.style.transform = `translate(-50%, -50%)`;
+
+        const textSpan = document.createElement('span');
+        textSpan.textContent = c.text;
+        div.appendChild(textSpan);
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.innerHTML = '&times;';
+        deleteBtn.className = 'absolute top-0 right-0 mt-1 mr-1 w-4 h-4 flex items-center justify-center text-yellow-700 hover:text-red-600 font-bold text-lg leading-none focus:outline-none';
+
+        deleteBtn.onclick = (e) => {
+            e.stopPropagation();
+            if (isCommentMode) return;
+            if (confirm('Deseja deletar este comentário?')) {
+                const refreshedMap = JSON.parse(localStorage.getItem('chartComments') || '{}');
+                refreshedMap[key] = (refreshedMap[key] || []).filter(item => item.timestamp !== c.timestamp);
+                localStorage.setItem('chartComments', JSON.stringify(refreshedMap));
+                renderComments();
+            }
+        };
+
+        div.appendChild(deleteBtn);
+
+        let isDragging = false;
+        let startX, startY;
+        let initialXPct, initialYPct;
+
+        const doDrag = (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const event = e.type.startsWith('touch') ? e.touches[0] : e;
+
+            const dx = event.clientX - startX;
+            const dy = event.clientY - startY;
+
+            const rect = container.getBoundingClientRect();
+            const dxPct = (dx / rect.width) * 100;
+            const dyPct = (dy / rect.height) * 100;
+
+            div.style.left = `${initialXPct + dxPct}%`;
+            div.style.top = `${initialYPct + dyPct}%`;
+        };
+
+        const stopDrag = (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            div.classList.remove('cursor-grabbing');
+            div.classList.add('cursor-grab');
+
+            document.removeEventListener('mousemove', doDrag);
+            document.removeEventListener('mouseup', stopDrag);
+            document.removeEventListener('touchmove', doDrag);
+            document.removeEventListener('touchend', stopDrag);
+
+            const refreshedMap = JSON.parse(localStorage.getItem('chartComments') || '{}');
+            const arr = refreshedMap[key] || [];
+            const item = arr.find(item => item.timestamp === c.timestamp);
+            if (item) {
+                item.x = parseFloat(div.style.left);
+                item.y = parseFloat(div.style.top);
+                localStorage.setItem('chartComments', JSON.stringify(refreshedMap));
+            }
+        };
+
+        const startDrag = (e) => {
+            if (isCommentMode) return;
+            if (e.target === deleteBtn) return;
+            isDragging = true;
+            div.classList.remove('cursor-grab');
+            div.classList.add('cursor-grabbing');
+
+            const event = e.type.startsWith('touch') ? e.touches[0] : e;
+            startX = event.clientX;
+            startY = event.clientY;
+
+            initialXPct = parseFloat(div.style.left);
+            initialYPct = parseFloat(div.style.top);
+
+            e.stopPropagation();
+
+            document.addEventListener('mousemove', doDrag, { passive: false });
+            document.addEventListener('mouseup', stopDrag);
+            document.addEventListener('touchmove', doDrag, { passive: false });
+            document.addEventListener('touchend', stopDrag);
+        };
+
+        div.addEventListener('mousedown', startDrag);
+        div.addEventListener('touchstart', startDrag, { passive: false });
+
+        container.appendChild(div);
+    });
+}
+
+function handleChartClick(event) {
+    if (!isCommentMode) return;
+
+    const container = document.getElementById('chart-image-container');
+    const rect = container.getBoundingClientRect();
+
+    const xPx = event.clientX - rect.left;
+    const yPx = event.clientY - rect.top;
+
+    const xPct = (xPx / rect.width) * 100;
+    const yPct = (yPx / rect.height) * 100;
+
+    const text = prompt('Digite seu comentário:');
+    if (!text || text.trim() === '') {
+        toggleCommentMode();
+        return;
+    }
+
+    const commentsMap = JSON.parse(localStorage.getItem('chartComments') || '{}');
+    const key = `${currentSongId}_${currentChartIndex}`;
+
+    if (!commentsMap[key]) commentsMap[key] = [];
+
+    commentsMap[key].push({
+        x: xPct,
+        y: yPct,
+        text: text.trim(),
+        timestamp: Date.now()
+    });
+
+    localStorage.setItem('chartComments', JSON.stringify(commentsMap));
+
+    toggleCommentMode();
+    renderComments();
+}
