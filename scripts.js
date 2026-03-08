@@ -852,7 +852,7 @@ function renderComments() {
 
     validComments.forEach(c => {
         const div = document.createElement('div');
-        div.className = 'chart-comment absolute bg-yellow-200 text-yellow-900 border border-yellow-400 p-2 pr-6 rounded shadow-md text-sm font-bold max-w-xs break-words z-20 cursor-grab flex items-start';
+        div.className = 'chart-comment absolute bg-yellow-200 text-yellow-900 border border-yellow-400 p-1 pr-5 rounded shadow-sm text-xs font-bold max-w-xs break-words z-20 cursor-grab flex items-start';
         div.style.left = `${c.x}%`;
         div.style.top = `${c.y}%`;
         div.style.transform = `translate(-50%, -50%)`;
@@ -863,7 +863,7 @@ function renderComments() {
 
         const deleteBtn = document.createElement('button');
         deleteBtn.innerHTML = '&times;';
-        deleteBtn.className = 'absolute top-0 right-0 mt-1 mr-1 w-4 h-4 flex items-center justify-center text-yellow-700 hover:text-red-600 font-bold text-lg leading-none focus:outline-none';
+        deleteBtn.className = 'absolute top-0 right-0 mt-0.5 mr-0.5 w-4 h-4 flex items-center justify-center text-yellow-700 hover:text-red-600 font-bold text-base leading-none focus:outline-none';
 
         deleteBtn.onclick = (e) => {
             e.stopPropagation();
