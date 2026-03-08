@@ -2423,6 +2423,7 @@ Final: [A]  [Bb]  [C]  [D]  [E]  [F]  [G]  [A]
     chart_image: "charts/Chuva de poder.png",
 
   },
+
   {
     id: 1010,
     title: "Com humildade",
