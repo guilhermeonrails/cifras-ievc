@@ -705,7 +705,7 @@ window.onload = () => {
         viewer.addEventListener('wheel', e => {
             const header = document.querySelector('header');
             const isFullscreen = header && header.classList.contains('hidden');
-            if (isFullscreen && viewMode === 'image') {
+            if (isFullscreen && viewMode === 'image' && !isCommentMode) {
                 if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 20) {
                     if (e.deltaX > 0) {
                         triggerAdjacentSong(1); // Scroll right -> Next
@@ -739,6 +739,8 @@ function triggerAdjacentSong(direction) {
 }
 
 function handleSwipe() {
+    if (isCommentMode) return;
+
     const header = document.querySelector('header');
     const isFullscreen = header && header.classList.contains('hidden');
 
