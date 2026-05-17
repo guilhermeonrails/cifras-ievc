@@ -10422,4 +10422,16 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/vai-valer-a-pena.png",
   },
+  {
+    id: 1103,
+    title: "Sou feliz com Jesus",
+    chord_text: "",
+    chart_image: "charts/Sou feliz com Jesus.png",
+  },
+  {
+    id: 1104,
+    title: "Quero ser como Cristo",
+    chord_text: "",
+    chart_image: "charts/Quero ser como Cristo.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
