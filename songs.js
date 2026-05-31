@@ -10428,4 +10428,10 @@ Teu nome imutável é`,
     chord_text: "",
     chart_image: "charts/Se paz a mais doce.png",
   },
+  {
+    id: 1104,
+    title: "Sublime - D",
+    chord_text: "",
+    chart_image: "charts/Sublime-fhop.png",
+  },
 ].sort((a, b) => a.title.localeCompare(b.title));
